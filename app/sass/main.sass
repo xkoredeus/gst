@@ -1,0 +1,484 @@
+@import "../fonts/fonts.css"
+
+$yel: #FACC00
+$purp: #4A34AE
+$dpurp: #1C1248
+$dark: #151515
+$lblue: #C9C2DF
+$dblue: #26166F
+$gray: #DFDEE3
+$tr: transparent
+
+$ulig: 'Ubuntu-Light'
+$ureg: 'Ubuntu'
+$umed: 'Ubuntu-Medium'
+$ubold: 'Ubuntu-Bold'
+
+
+body
+	scroll-behavior: smooth
+	background-color: #fff
+	font-family: $ureg
+	color: $dark
+	font-size: 14px
+	line-height: 1.2
+	position: relative
+	-webkit-font-smoothing: antialiased
+*,
+*:after,
+*:before
+	transition: .3s all ease
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, a::selection, span::selection, div::selection, img::selection, mark::selection, ul::selection, li::selection
+	color            : #fff
+	background-color : $purp
+::selection
+	color            : #fff
+	background-color : $purp
+a, a:hover, a:active, a:focus,
+button, input, button:hover, button:active, button:focus,
+input:focus, input:active, .btn, .btn:after, select:focus, select:active
+	text-decoration: none
+	outline: none
+	transition: all 0.4s ease
+	cursor: pointer
+a
+	color: $dark
+	&:hover
+		color: $purp
+button
+	border: $tr
+	background: none
+option
+	color: $dark
+textarea
+	resize:none
+input,
+textarea,
+select
+	color: $dark
+	font-family: $ureg
+	font-size: 14px
+	padding: 12px 30px
+	background: #fff
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5)
+	border: none
+input,
+select
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5)
+	border-radius: 3px
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder
+	color: $dark
+input:focus,
+textarea:focus,
+input:active,
+textarea:active
+	color: $dark
+	box-shadow: inset 0px 1px 3px 1px $purp
+	outline: none
+.checkbox
+	min-width: 200px
+	cursor: pointer
+	position: relative
+	margin-bottom: 0
+	input[type="checkbox"],
+	input[type="radio"]
+		position: absolute
+		z-index: 1
+		opacity: 0
+		width: 100%
+		height: 20px
+		cursor: pointer
+	.checkbox__text
+		font-size: 14px
+		position: relative
+		padding-left: 30px
+		cursor: pointer
+		width: 100%
+		height: 30px
+		display: block
+		&::before
+			content: ''
+			position: absolute
+			top: 0px
+			left: -2px
+			width: 20px
+			height: 20px
+			border-radius: 2px
+			border: 1px solid #c3c2c2
+			background: #fff
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			margin-top: -11px
+			left: 2px
+			width: 12px
+			height: 12px
+			background-color: $purp
+			border-radius: 2px
+			opacity: 0
+			transform: scale(0)
+			transition: 0.2s
+		a
+			color: $purp
+			text-decoration: underline
+			position: relative
+			z-index: 2
+	input[type="checkbox"]:checked + .checkbox__text:after,
+	input[type="radio"]:checked + .checkbox__text:after
+		opacity: 1
+		transform: scale(1)
+	input[type="checkbox"]:checked + .checkbox__text:before,
+	input[type="radio"]:checked + .checkbox__text:before
+		background-color: #fff
+.und
+	text-decoration: underline
+.tac
+	text-align: center
+.tal
+	text-align: left !important
+.img-fluid
+	max-width: 100%
+	height: auto
+.shd,
+button:active
+	box-shadow: 0px 12px 28px -13px rgba(0,0,0,0.64)
+	.shd:hover
+		box-shadow: 0px 16px 32px -9px rgba(0,0,0,0.69)
+.btn
+	outline: none
+	font-size: 14px
+	font-family: $ubold
+	text-align: center
+	padding: 15px 30px
+	color: $dark
+	background-color: $yel
+	position: relative
+	display: inline-block
+	border-radius: 3px
+	&:hover
+		color: #fff
+		background-color: $purp
+	&_transp
+		background: $tr
+		border: 1px solid $purp
+		&:hover
+			background: rgb(0,87,255)
+			border-color: rgb(0,87,255)
+.list_circle
+	list-style-type: none
+	padding-left: 0
+	li
+		padding-left: 25px
+		position: relative
+		&
+			margin-bottom: 10px
+		&::before
+			content: ''
+			position: absolute
+			width: 8px
+			height: 8px
+			background-color: #EE414F
+			left: 0
+			top: 8px
+			border-radius: 50%
+.popup__container
+	padding: 40px
+	background-color: $tr
+	.fancybox-close-small
+		top: 40px
+		right: 40px
+		color: $dark
+	.popup__wrp
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-flex-wrap: wrap
+		-moz-flex-wrap: wrap
+		-ms-flex-wrap: wrap
+		-o-flex-wrap: wrap
+		flex-wrap: wrap
+		-ms-align-items: center
+		align-items: center
+		justify-content: center
+		position: relative
+		&::before
+			z-index: 1
+			content: ''
+			position: absolute
+			height: 110%
+			width: 110%
+			top: -5%
+			right: -5%
+			bottom: -5%
+			left: -5%
+			z-index: 1
+			background-color: $purp
+			opacity: .7
+	.popup_call__wrp
+		max-width: 320px
+		.popup
+			width: 100%
+			height: 100%
+			position: relative
+			z-index: 2
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			-webkit-flex-direction: column
+			-moz-flex-direction: column
+			-ms-flex-direction: column
+			-o-flex-direction: column
+			flex-direction: column
+			-ms-align-items: center
+			align-items: center
+			justify-content: flex-start
+			background-color: #fff
+			color: $dark
+			padding: 20px 25px 30px
+			text-align: center
+			&__ttl
+				font-family: $ubold, sans-serif
+				text-transform: uppercase
+				font-size: 22px
+				margin-bottom: 30px
+			.form__input
+				color: $dark
+				margin-bottom: 15px
+			input.form__input::placeholder
+				color: $dark
+			.btn
+				width: 100%
+				margin-bottom: 15px
+			&__policy
+				margin-top: 15px
+				max-width: 230px
+				text-align: center
+				font-size: 12px
+				a
+					font-size: 12px 
+					color: #00BFF3
+.owl-carousel
+	.owl-dots
+		position: absolute
+		width: 100%
+		display: flex
+		justify-content: center
+		bottom: 0
+		button.owl-dot
+			width: 17px
+			height: 17px
+			border: 2px solid $lblue
+			border-radius: 50%
+			background-color: $lblue
+			position: relative
+			transform: scale(.8)
+			&:not(:last-child)
+				margin-right: 13px
+			&.active
+				transform: scale(1)
+				// border-color: $tr
+				background-color: $tr
+	.owl-nav
+		button.owl-prev,
+		button.owl-next
+			position: absolute
+			bottom: 50%
+			margin-bottom: -25.5px
+			border-radius: 50%
+			padding: 10px !important
+			border: 2px solid $dark
+			background-color: $tr
+			transform: scale(.73)
+
+		button.owl-prev:hover,
+		button.owl-next:hover
+			background-color: $yel
+			transform: scale(.65)
+			border-color: $yel
+		button.owl-prev.disabled,
+		button.owl-next.disabled,
+		button.owl-prev.disabled:hover,
+		button.owl-next.disabled:hover
+			opacity: 0
+			cursor: default
+			
+		button.owl-prev
+			left: 0
+		button.owl-next
+			right: 0
+.section
+	&_inner
+		padding: 60px 0
+	&__ttl
+		font-size: 36px
+		font-family: $ubold
+		letter-spacing: .8px
+		margin-bottom: 35px
+		text-align: center
+	&__subttl
+		font-size: 18px
+		margin-top: -25px
+		margin-bottom: 35px
+.header
+	background: url('../img/header__bg.jpg') no-repeat 50% 50% / cover
+	overflow: hidden
+	&__top
+		// padding: 15px 0
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			background-color: $dpurp
+			left: 0
+			top: 0
+			opacity: .7
+		.container
+			position: relative
+		a:not(.btn)
+			color: #fff
+		.btn
+			padding-top: 18px
+			transform: translateY(2px)
+			margin-top: -12px
+			padding-top: 25px
+	&__tel
+		color: #fff
+		&:nth-child(1)
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				width: 1px
+				height: 100%
+				background-color: #fff
+				right: -15px
+				top: 0
+	&__bot
+		padding: 30px 0
+	&__logo
+		&:hover
+			img
+				transform: scale(.93)
+	&__nav
+		&-link
+			color: #fff
+			padding: 12px 10px
+			border: 1px solid #fff
+			border-radius: 3px
+			&:hover
+				background-color: $yel
+				border-color: $yel
+				color: $dark
+	&__search
+		position: relative
+		width: 100%
+		&-input
+			width: 100%
+			padding-left: 20px
+		&-btn
+			position: absolute
+			width: 26px
+			height: 26px
+			top: 10px
+			right: 10px
+			background: url('../img/icon__loupe.png') no-repeat 50% 50% / contain
+			padding: 0
+			transform: scale(.96)
+			box-shadow: none
+			&:hover
+				transform: scale(1.05)
+	&__banner
+		color: #fff
+		&-item
+			padding: 40px 0
+			min-height: 550px
+			display: flex
+			align-items: center
+			opacity: 0
+		.owl-item.active
+			.header__banner-item
+				opacity: 1
+		.section
+			&__ttl
+				margin-bottom: 55px
+			&__subttl
+				font-size: 28px
+				margin-bottom: 25px
+			.btn
+				margin-bottom: 35px
+		&-img
+			img
+				max-width: 780px
+				width: auto !important
+		.owl-dots
+			justify-content: flex-start
+			bottom: 30px
+			width: 1140px
+			left: 50%
+			margin-left: calc(-1110px/2)
+.sol
+	background: url('../img/sol__bg.jpg') no-repeat 50% 50% / cover
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		right: 0
+		top: 0
+		background-color: $gray
+		opacity: .8
+	.container
+		position: relative
+	&__item
+		max-width: 270px
+		margin: 0px 15px 30px
+		text-align: center
+		display: flex
+		flex-direction: column
+		// justify-content: center
+		align-items: center
+		&-top
+			width: 130px
+			height: 130px
+			background-color: #fff
+			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
+			border-radius: 5px
+			margin-bottom: 15px
+			display: flex
+			justify-content: center
+			align-items: center
+		&-img
+			width: 90px
+			height: 90px
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			background-size: contain
+		&-ttl
+			font-size: 16px
+		&:hover
+			.sol__item-top
+				background-color: $yel
+.out
+	background: url('../img/out__bg.jpg') no-repeat 50% 50% / cover
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		right: 0
+		top: 0
+		background-color: $dblue
+		opacity: .8
+	.container
+		position: relative
