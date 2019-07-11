@@ -52,7 +52,7 @@ button
 option
 	color: $dark
 textarea
-	resize:none
+	resize: none
 input,
 textarea,
 select
@@ -62,14 +62,15 @@ select
 	padding: 12px 30px
 	background: #fff
 	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5)
-	border: none
-input,
-select
-	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5)
+	border: 1px solid #C9C2DF
 	border-radius: 3px
+input.btn
+	box-shadow: none
+	border: none
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
-input[type="tel"]::placeholder
+input[type="tel"]::placeholder,
+textarea::placeholder
 	color: $dark
 input:focus,
 textarea:focus,
@@ -275,8 +276,11 @@ textarea:active
 				font-size: 12px
 				a
 					font-size: 12px 
-					color: #00BFF3
+					color: $purp
 .owl-carousel
+	.owl-item
+		img
+			width: auto !important
 	.owl-dots
 		position: absolute
 		width: 100%
@@ -380,7 +384,33 @@ textarea:active
 		&:hover
 			img
 				transform: scale(.93)
+	&__hamb
+		display: none
+		position: absolute
+		top: 25px
+		right: 23px
+		width: 32px
+		height: 2px
+		background-color: $yel
+		opacity: 1
+		z-index: 2
+		transition: all 0.5s ease
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			width: 32px
+			height: 2px
+			background-color: $yel
+			left: 0
+		&::before
+			top: -14px
+		&::after
+			bottom: -14px
 	&__nav
+		display: flex
+		&-logo
+			display: none
 		&-link
 			color: #fff
 			padding: 12px 10px
@@ -462,10 +492,12 @@ textarea:active
 			padding: 0
 			transform: scale(.96)
 			box-shadow: none
+			border: none
 			&:hover
 				transform: scale(1.05)
 	&__banner
 		color: #fff
+		overflow: hidden
 		&-item
 			padding: 40px 0
 			min-height: 550px
@@ -510,6 +542,7 @@ textarea:active
 		position: relative
 	&__item
 		max-width: 220px
+		width: 100%
 		margin: 0px 15px 30px
 		text-align: center
 		display: flex
@@ -566,6 +599,9 @@ textarea:active
 				background-color: #7C72AA
 				border-top-left-radius: 5px
 				border-top-right-radius: 5px
+				display: flex
+				justify-content: center
+				align-items: center
 				&:hover:not(.active)
 					transform: translateY(3px)
 				&.active
@@ -687,11 +723,11 @@ textarea:active
 				position: absolute
 				&:nth-child(1),
 				&:nth-child(2)
-					width: 300px
+					width: 60%
 					height: 1px
 					background-color: #FEF4D3
 					left: 50%
-					margin-left: -150px
+					margin-left: -30%
 				&:nth-child(1)
 					top: -1px
 				&:nth-child(2)
@@ -699,10 +735,10 @@ textarea:active
 				&:nth-child(3),
 				&:nth-child(4)
 					width: 1px
-					height: 240px
+					height: 60%
 					background-color: #FEF4D3
 					top: 50%
-					margin-top: -120px
+					margin-top: -20%
 				&:nth-child(3)
 					left: -1px
 				&:nth-child(4)
@@ -774,3 +810,81 @@ textarea:active
 				font-size: 24px
 			&:hover
 				transform: scale(.94)
+.news
+	&__item
+		max-width: 570px
+		margin-left: auto
+		margin-right: auto
+		padding: 15px
+		&-ttl
+			font-family: $ubold
+			font-size: 28px
+		&-descr
+			color: #969696
+.map
+	position: relative
+	.container
+		position: relative
+	&__in
+		position: absolute
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+	&__form
+		width: 370px
+		left: 0%
+		top: 20px
+		padding: 30px
+		background-color: #fff
+		&-ttl
+			font-family: $ubold
+			font-size: 28px
+			margin-bottom: 15px
+		&-input
+			width: 100%
+.footer
+	background-color: #000
+	padding: 40px 0
+	color: #fff
+	a:not(.btn)
+		color: #fff
+		&:hover
+			color: $yel
+	.btn
+		padding-left: 15px
+		padding-right: 15px
+	&__ttl
+		font-family: $ubold
+		font-size: 20px
+		margin-bottom: 20px
+	&__soc
+		&-item
+			&:hover
+				img
+					transform: scale(.9)
+	&__tel
+		color: #fff
+		&:nth-child(1)
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				width: 1px
+				height: 100%
+				background-color: #fff
+				right: -15px
+				top: 0
+	&__logo
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			width: 1px
+			height: 100%
+			background-color: #fff
+			right: -15px
+			top: 0
+		&:hover
+			img
+				transform: scale(.9)

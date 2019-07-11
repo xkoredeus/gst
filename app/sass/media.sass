@@ -1,25 +1,196 @@
-@media screen and (max-width: 1070px)
-	.main-slider__item
-		background-position-x: 20%
-	.main-slider__container
-		padding-right: 30px
-		padding-left: 30px
-	.main-slider .owl-carousel .owl-nav button.owl-prev
-		left: 0
-	.main-slider .owl-carousel .owl-nav button.owl-next
-		right: 0
+$yel: #FACC00
+$purp: #4A34AE
+$dpurp: #1C1248
+$dark: #151515
+$lblue: #C9C2DF
+$blue: #26166F
+$dblue: #26166F
+$gray: #DFDEE3
+$tr: transparent
+
+$ulig: 'Ubuntu-Light'
+$ureg: 'Ubuntu'
+$umed: 'Ubuntu-Medium'
+$ubold: 'Ubuntu-Bold'
+
+@media screen and (max-width: 1200px)
+	.header
+		&__top
+			padding: 10px 0
+			.btn
+				margin-top: 0
+				padding-top: 15px
+		&__hamb
+			display: block
+		&__banner
+			&-item
+				padding-top: 0
+				text-align: center !important
+			.section
+				&__ttl,
+				&__subttl
+					text-align: center !important
+			&-img
+				img
+					max-width: 540px
+					margin: 0 auto 15px
+			.owl-dots
+				width: auto
+				left: 15px
+				margin-left: 0
+		&__nav
+			display: none
+			&-link
+				width: 370px
+				margin-bottom: 15px
+				&::after
+					display: none
+			&-sub
+				width: 370px
+				position: relative
+				top: -20px
+				&-link
+					img
+						transform: rotate(90deg)
+					&-wrp
+						&.hover-2
+							.header__nav-sub-link
+							img
+								transform: rotate(-90deg)
+				&_2
+					position: relative
+					left: 0
+					width: 100%
+	.fancybox-stage
+		.header__nav
+			width: 100%
+			max-width: 390px
+			z-index: 1
+			background-color: $purp
+			border: 10px solid #fff
+			&-link
+				background-color: #ffffff61
+			// a
+			// 	&:hover
+			// 		color: #fff
+			&-logo
+				display: block
+				margin: 0 auto 15px
+			.fancybox-close-small
+				color: #fff
+	.out
+		&__img
+			opacity: .3
+	.prj
+		&__right
+			display: none !important
+		&__left
+			min-height: auto
+			&-item
+				position: relative
+				min-height: auto
+			.owl-item.active
+				.prj__left
+					&-item
+						opacity: 1
+						transform: scale(1)
+					&-in
+						opacity: 1
+	.owl-carousel
+		.owl-nav
+			button.owl-
+				&prev
+					left: -17px
+					transform: scale(.7)
+				&next
+					right: -17px
+					transform: scale(.7)
+	.footer
+		text-align: center
+		.btn
+			max-width: 290px
+			margin-left: auto
+			margin-right: auto
 @media screen and (max-width: 768px)
-	.section__ttl,
-	.main-slider__ttl
-		font-size: 25px
-@media screen and (max-width: 576px)
-	.news__item-wrp
-		max-width: 320px
-		margin-left: auto
-		margin-right: auto
-	.main-slider .owl-carousel .owl-nav button.owl-prev
-		left: -9px
-		transform: scale(.7)
-	.main-slider .owl-carousel .owl-nav button.owl-next
-		right: -9px
-		transform: scale(.7)
+	
+	.section__ttl
+		font-size: 23px
+	.news__item-ttl,
+	.section__subttl
+		font-size: 20px !important
+	.header__nav
+		&-link
+			width: 100%
+			// min-width: 302px
+			padding: 8px
+		&-sub
+			width: 100%
+			// min-width: 302px
+			&-link
+				padding: 8px
+	.out
+		&__img
+			display: none
+		.tabs
+			&__container
+				padding: 25px 15px
+			&__content-item
+				min-height: auto
+	.prj__left-in
+		padding: 10px
+
+	
+@media screen and (max-width: 600px)
+	.header
+		&__tel:nth-child(1)::before
+			display: none
+	.out
+		&__img
+			display: none
+		.tabs
+			border-radius: 5px
+			overflow: hidden
+			&__list
+				flex-direction: column
+				li
+					width: 100%
+					border-top-left-radius: 0
+					border-top-right-radius: 0
+					&:hover
+						&:not(.active)
+							transform: translateY(0)
+	.map__form
+		width: 100%
+		padding: 15px
+	
+		&__link
+			transition: unset
+		&__ttl_mobile
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				width: 10px
+				height: 10px
+				right: 20px
+				top: 3px
+				border-bottom: solid 5px #fff
+				border-right: solid 5px #fff
+				border-left: solid 5px transparent
+				border-top: solid 5px transparent
+				transform: rotate(45deg)
+			&.active
+				&::after
+					top: 9px
+					transform: rotate(45deg) scale(-1,-1)
+	.footer
+		&__tel:nth-child(1)::before
+			display: none
+@media screen and (max-width: 420px)
+	.header
+		&__nav
+			&-sub,
+			&-link
+				min-width: unset
+	.fancybox-content
+		padding: 15px

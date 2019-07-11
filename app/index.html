@@ -14,25 +14,27 @@
 	<header class="header">
 		<div class="header__top">
 			<div class="container">
-				<div class="d-flex align-items-center justify-content-between">
-					<div class="d-flex align-items-center">
-						<a href="tel:78463406191" class="d-flex align-items-center header__tel mr-4">
+				<div class="d-flex flex-column flex-xl-row align-items-center justify-content-center justify-content-xl-between">
+					<div class="d-flex flex-column flex-sm-row align-items-center mb-2 mb-xl-0 mr-xl-3 mb-xl-0">
+						<a href="tel:78463406191" class="d-flex align-items-center header__tel mr-sm-4 mb-3 mb-sm-0">
 							<img src="img/icon__tel.png" alt="icon__tel.png" class="mr-2">
 							<span>+7 846 340-61-91</span>
 						</a>
 						<a href="tel:78463405880" class="d-flex align-items-center header__tel">
+							<img src="img/icon__tel.png" alt="icon__tel.png" class="mr-2 d-block d-sm-none">
 							<span>+7 846 340-58-80</span>
 						</a>
 					</div>
-					<div class="d-flex align-items-center header__tel mr-4">
+					<div class="d-none d-xl-flex align-items-center header__tel mr-4">
 						<img src="img/icon__time_white.png" alt="icon__time_white.png" class="mr-2">
 						<span>Часы работы: пн.-пт. с 10:00 до 19:00</span>
 					</div>
-					<a href="mailto:sales@gst-samara.ru" class="d-flex align-items-center header__tel mr-4">
+					<a href="mailto:sales@gst-samara.ru" class="d-none d-xl-flex align-items-center header__tel mr-4">
 						<img src="img/icon__mes_white.png" alt="icon__mes_white.png" class="mr-2">
 						<span>sales@gst-samara.ru</span>
 					</a>
 					<a href="#popup_call" data-fancybox class="btn">Оставить заявку</a>
+					<a href="#menu" data-fancybox class="header__hamb"></a>
 				</div>
 			</div>
 		</div>
@@ -40,12 +42,15 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-xl-2">
-						<a href="#" class="header__logo">
-							<img src="img/main-logo.png" alt="main-logo.png" class="img-fluid">
-						</a>
+						<div class="d-flex justify-content-center justify-content-xl-start mb-3 mb-xl-0">
+							<a href="#" class="header__logo">
+								<img src="img/main-logo.png" alt="main-logo.png" class="img-fluid">
+							</a>
+						</div>
 					</div>
 					<div class="col-xl-8">
-						<div class="header__nav d-flex justify-content-between align-items-center">
+						<div class="header__nav justify-content-between align-items-center" id="menu">
+							<img src="img/main-logo.png" alt="" class="header__nav-logo">
 							<div class="header__nav-link-wrp header__nav-link-wrp_sub">
 								<a href="#" class="header__nav-link">Решения и продукты</a>
 								<div class="header__nav-sub">
@@ -178,9 +183,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-6">
-							<h1 class="section__ttl tal">Разработка комплексных решений по автоматизации технологических и бизнес- процессов предприятия.</h1>
+							<div class="section__ttl tal">Разработка комплексных решений по автоматизации технологических и бизнес- процессов предприятия.</div>
 							<div class="section__subttl">Разработано профессионалами индустрии</div>
-							<a href="#" class="btn mt-5">Подробнее</a>
+							<a href="#" class="btn mt-2 mt-xl-5 mb-3 mb-xl-0">Подробнее</a>
 						</div>
 						<div class="col-xl-6">
 							<div class="header__banner-img">
@@ -194,9 +199,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-6">
-							<h1 class="section__ttl tal">Разработка комплексных решений по автоматизации технологических и бизнес- процессов предприятия.</h1>
+							<div class="section__ttl tal">Разработка комплексных решений по автоматизации технологических и бизнес- процессов предприятия.</div>
 							<div class="section__subttl">Разработано профессионалами индустрии</div>
-							<a href="#" class="btn mt-5">Подробнее</a>
+							<a href="#" class="btn mt-2 mt-xl-5 mb-3 mb-xl-0">Подробнее</a>
 						</div>
 						<div class="col-xl-6">
 							<div class="header__banner-img">
@@ -210,9 +215,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-6">
-							<h1 class="section__ttl tal">Разработка комплексных решений по автоматизации технологических и бизнес- процессов предприятия.</h1>
+							<div class="section__ttl tal">Разработка комплексных решений по автоматизации технологических и бизнес- процессов предприятия.</div>
 							<div class="section__subttl">Разработано профессионалами индустрии</div>
-							<a href="#" class="btn mt-5">Подробнее</a>
+							<a href="#" class="btn mt-2 mt-xl-5 mb-3 mb-xl-0">Подробнее</a>
 						</div>
 						<div class="col-xl-6">
 							<div class="header__banner-img">
@@ -226,7 +231,7 @@
 	</header>
 	<section class="section_inner sol">
 		<div class="container">
-			<h3 class="section__ttl">Решения и продукты для вашего бизнеса</h3>
+			<div class="section__ttl">Решения и продукты для вашего бизнеса</div>
 			<div class="d-flex flex-wrap justify-content-center">
 				<div class="sol__item">
 					<div class="sol__item-top shd">
@@ -275,7 +280,7 @@
 	</section>
 	<section class="section_inner out">
 		<div class="container">
-			<h3 class="section__ttl">ИТ-аутсорсинг</h3>
+			<div class="section__ttl">ИТ-аутсорсинг</div>
 			<div class="section__subttl">Мы предоставляем полный спектр ИТ услуг: услуги ИТ-аутсорсинга и решение вопросов, связанных с разработкой, внедрением и сопровождением информационных систем:</div>
 			<div class="tabs">
 				<ul class="tabs__list">
@@ -302,7 +307,7 @@
 	</section>
 	<section class="section_inner about">
 		<div class="container">
-			<h3 class="section__ttl">О компании</h3>
+			<div class="section__ttl">О компании</div>
 			<p>Джи-Эс-Ти работает на самарском рынке ИТ-услуг с 2005 года. За годы работы компания накопила опыт реализации проектов в различных областях информационных технологий.Благодаря тесным партнерским отношениям с мировыми производителями высокотехнологичного оборудования и программного обеспечения, таких как: Hitachi Data System, IBM, Fujitsu, Kraftway, Lenovo, D-Link, Xerox, Canon, Konica-Minolta, Brother, Microsoft Corporation, компания имеет возможность предложить своим клиентам новейшие высокотехнологичные продукты и эффективные решения.</p>
 			<p>Джи-Эс-Ти работает для клиентов и вместе с ними. Каждый клиент компании – партнер по взаимовыгодному и долгосрочному сотрудничеству.</p>
 			<p>Индивидуальный подход к решению любых задач – один из важных принципов работы. Исходя из этого, компания Джи-Эс-Ти стремимся предоставлять максимально качественные услуги для развития и продвижения бизнеса.</p>
@@ -368,7 +373,7 @@
 	</section>
 	<section class="section_inner clients">
 		<div class="container">
-			<h3 class="section__ttl">Клиенты</h3>
+			<div class="section__ttl">Клиенты</div>
 			<div class="clients__in owl-carousel">
 				<div class="clients__item shd">
 					<div class="clients__item-img" style="background-image: url(img/clients__img_1.png)"></div>
@@ -400,51 +405,51 @@
 			</div>
 			<div class="part">
 				<div class="row align-items-end">
-					<div class="col-xl-2 col-sm-4 mb-4 order-2 order-xl-1">
+					<div class="col-6 col-xl-2 col-sm-4 mb-4 order-2 order-xl-1">
 						<div class="clients__item shd">
 							<div class="clients__item-img" style="background-image: url(img/clients__img_1.png)"></div>
 						</div>
 					</div>
 					<div class="col-xl-6 order-xl-2 order-1 mb-4">
-						<h3 class="section__ttl tal">Партнеры</h3>
+						<div class="section__ttl tal">Партнеры</div>
 						<p>Джи-Эс-Ти тесно сотрудничает с ведущими мировыми и российскими производителями серверного оборудования и систем хранения данных, печатного оборудования, коммуникационного оборудования, оборудования для построения центров обработки данных. Такое сотрудничество с производителями позволяет грамотно подбирать, эффективно внедрять и квалифицировано обслуживать широкий спектр оборудования.</p>
 					</div>
-					<div class="col-xl-2 col-sm-4 mb-4 order-3 order-xl-3">
+					<div class="col-6 col-xl-2 col-sm-4 mb-4 order-3 order-xl-3">
 						<div class="clients__item shd">
 							<div class="clients__item-img" style="background-image: url(img/clients__img_2.png)"></div>
 						</div>
 					</div>
-					<div class="col-xl-2 col-sm-4 mb-4 order-4 order-xl-4">
+					<div class="col-6 col-xl-2 col-sm-4 mb-4 order-4 order-xl-4">
 						<div class="clients__item shd">
 							<div class="clients__item-img" style="background-image: url(img/clients__img_3.png)"></div>
 						</div>
 					</div>
-					<div class="col-xl-2 col-sm-4 mb-4 order-5 order-xl-5">
+					<div class="col-6 col-xl-2 col-sm-4 mb-4 order-5 order-xl-5">
 						<div class="clients__item shd">
 							<div class="clients__item-img" style="background-image: url(img/clients__img_4.png)"></div>
 						</div>
 					</div>
-					<div class="col-xl-2 col-sm-4 mb-4 order-6 order-xl-6">
+					<div class="col-6 col-xl-2 col-sm-4 mb-4 order-6 order-xl-6">
 						<div class="clients__item shd">
 							<div class="clients__item-img" style="background-image: url(img/clients__img_5.png)"></div>
 						</div>
 					</div>
-					<div class="col-xl-2 col-sm-4 mb-4 order-7 order-xl-7">
+					<div class="col-6 col-xl-2 col-sm-4 mb-4 order-7 order-xl-7">
 						<div class="clients__item shd">
 							<div class="clients__item-img" style="background-image: url(img/clients__img_6.png)"></div>
 						</div>
 					</div>
-					<div class="col-xl-2 col-sm-4 mb-4 order-8 order-xl-8">
+					<div class="col-6 col-xl-2 col-sm-4 mb-4 order-8 order-xl-8">
 						<div class="clients__item shd">
 							<div class="clients__item-img" style="background-image: url(img/clients__img_7.png)"></div>
 						</div>
 					</div>
-					<div class="col-xl-2 col-sm-4 mb-4 order-9 order-xl-9">
+					<div class="col-6 col-xl-2 col-sm-4 mb-4 order-9 order-xl-9">
 						<div class="clients__item shd">
 							<div class="clients__item-img" style="background-image: url(img/clients__img_8.png)"></div>
 						</div>
 					</div>
-					<div class="col-xl-2 col-sm-4 mb-4 order-10 order-xl-10">
+					<div class="col-6 col-xl-2 col-sm-4 mb-4 order-10 order-xl-10">
 						<div class="clients__item shd">
 							<div class="clients__item-img" style="background-image: url(img/clients__img_3.png)"></div>
 						</div>
@@ -455,7 +460,7 @@
 	</section>
 	<section class="prj section_inner">
 		<div class="container">
-			<h3 class="section__ttl">Реализованные проекты</h3>
+			<div class="section__ttl">Реализованные проекты</div>
 			<div class="row no-gutters">
 				<div class="col-xl-6">
 					<div class="prj__left">
@@ -683,10 +688,139 @@
 			</div>
 		</div>
 	</section>
+	<section class="section_inner news">
+		<div class="container">
+			<div class="section__ttl">Новости и события</div>
+			<div class="news__in owl-carousel">
+				<div class="news__item">
+					<a href="#" class="news__item-ttl">Бизнес в цифровую эпоху: сборник статей Harvard Business Review — в открытом доступе!</a>
+					<div class="news__item-descr mt-3">Джи-Эс-Ти тесно сотрудничает с ведущими мировыми и российскими производителями серверного оборудования и систем хранения данных.</div>
+					<div class="d-flex mt-4 align-items-center">
+						<img src="img/icon__date.png" alt="" class="mr-2">
+						<span>20 марта, 2019</span>
+					</div>
+				</div>
+				<div class="news__item">
+					<a href="#" class="news__item-ttl">Бизнес в цифровую эпоху: сборник статей Harvard Business Review — в открытом доступе!</a>
+					<div class="news__item-descr mt-3">Джи-Эс-Ти тесно сотрудничает с ведущими мировыми и российскими производителями серверного оборудования и систем хранения данных.</div>
+					<div class="d-flex mt-4 align-items-center">
+						<img src="img/icon__date.png" alt="" class="mr-2">
+						<span>20 марта, 2019</span>
+					</div>
+				</div>
+				<div class="news__item">
+					<a href="#" class="news__item-ttl">Бизнес в цифровую эпоху: сборник статей Harvard Business Review — в открытом доступе!</a>
+					<div class="news__item-descr mt-3">Джи-Эс-Ти тесно сотрудничает с ведущими мировыми и российскими производителями серверного оборудования и систем хранения данных.</div>
+					<div class="d-flex mt-4 align-items-center">
+						<img src="img/icon__date.png" alt="" class="mr-2">
+						<span>20 марта, 2019</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section_inner map">
+		<div class="map__in" style="background: url(img/map__bg.jpg) no-repeat 50% 50% / cover"></div>
+		<div class="container">
+			<form action="" class="map__form">
+				<div class="map__form-ttl">Обсудить проект</div>
+				<input type="text" placeholder="Фамилия Имя Отчество*" required="" class="mb-3 map__form-input">
+				<input type="email" placeholder="Ваш email*" required="" class="mb-3 map__form-input">
+				<input type="tel" placeholder="Ваш телефон*" required="" class="mb-3 map__form-input">
+				<textarea cols="30" rows="4" placeholder="Ваше сообщение*" class="mb-3 map__form-input"></textarea>
+				<label for="map__checkbox" class="checkbox mb-3">
+					<input type="checkbox" id="map__checkbox" required="">
+					<span class="checkbox__text">Я согласен на обработку <a href="#">персональных данных</a></span>
+				</label>
+				<input type="submit" value="Отправить" class="btn">
+			</form>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row mb-3">
+				<div class="col-xl-4 col-sm-6 mb-4">
+					<div class="footer__ttl footer__ttl_mobile mb-3">Обсудить проект</div>
+					<div class="d-flex flex-column flex-xl-row justify-content-between">
+						<div class="d-flex flex-column">
+							<a href="#" class="footer__link mb-1">Решения и продукты</a>
+							<a href="#" class="footer__link mb-1">Услуги</a>
+							<a href="#" class="footer__link mb-1">О компании</a>
+							<a href="#" class="footer__link mb-1">Реализованнные проекты</a>
+							<a href="#" class="footer__link mb-1">Партнеры</a>
+						</div>
+						<div class="d-flex flex-column">
+							<a href="#" class="footer__link mb-1">Вакансии</a>
+							<a href="#" class="footer__link mb-1">Компетенции</a>
+							<a href="#" class="footer__link mb-1">Контакты</a>
+							<a href="#" class="footer__link mb-1">Новости</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6 col-sm-6 mb-4">
+					<div class="footer__ttl footer__ttl_mobile mb-3">Популярные ссылки</div>
+					<div class="d-flex flex-column flex-xl-row justify-content-between">
+						<div class="d-flex flex-column">
+							<a href="#" class="footer__link mb-1">Решения обработки и хранения данных</a>
+							<a href="#" class="footer__link mb-1">Оптимизация печати</a>
+							<a href="#" class="footer__link mb-1">Решения для визуализации</a>
+							<a href="#" class="footer__link mb-1">Корпоративный портал</a>
+							<a href="#" class="footer__link mb-1">Системы управления производством</a>
+						</div>
+						<div class="d-flex flex-column">
+							<a href="#" class="footer__link mb-1">Информационная безопасность</a>
+							<a href="#" class="footer__link mb-1">Сетевая инфраструктура</a>
+							<a href="#" class="footer__link mb-1">ИТ аутсорсинг</a>
+							<a href="#" class="footer__link mb-1">ИТ консалтинг</a>
+							<a href="#" class="footer__link mb-1">Сервисное обслуживание</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-2 mb-4">
+					<div class="footer__ttl mb-3">Соцсети</div>
+					<div class="d-flex flex-column">
+						<div class="d-flex justify-content-center justify-content-xl-between footer__soc mb-3 mb-xl-4">
+							<a href="#" target="_blank" class="footer__soc-item mr-3 mr-xl-0"><img src="img/icon__fb.png" alt=""></a>
+							<a href="#" target="_blank" class="footer__soc-item mr-3 mr-xl-0"><img src="img/icon__vk.png" alt=""></a>
+							<a href="#" target="_blank" class="footer__soc-item mr-3 mr-xl-0"><img src="img/icon__in.png" alt=""></a>
+							<a href="#" target="_blank" class="footer__soc-item"><img src="img/icon__yt.png" alt=""></a>
+						</div>
+						<a href="#popup_call" data-fancybox class="btn">Оставить заявку</a>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex flex-xl-row flex-column align-items-center align-items-xl-end justify-content-between">
+				<div class="d-flex align-items-end mb-3 mb-xl-0">
+					<a href="#" class="footer__logo mr-4">
+						<img src="img/footer__logo.png" alt="footer__logo.png">
+					</a>
+					<div class="footer__copy">© 2019<br>ООО "Джи-Эс-Ти</div>
+				</div>
+				<div class="d-flex align-items-center footer__tel mr-xl-4 mb-3 mb-xl-0">
+					<img src="img/icon__geo_white.png" alt="icon__geo_white.png" class="mr-2" style="width:15px">
+					<span>Самара, ул. Чапаевская, д. 112А</span>
+				</div>
+				<div class="d-flex flex-column flex-sm-row align-items-center mb-3 mb-xl-0">
+					<a href="tel:78463406191" class="d-flex align-items-center footer__tel mr-sm-4 mb-3 mb-sm-0">
+						<img src="img/icon__tel.png" alt="icon__tel.png" class="mr-2">
+						<span>+7 846 340-61-91</span>
+					</a>
+					<a href="tel:78463405880" class="d-flex align-items-center footer__tel">
+						<img src="img/icon__tel.png" alt="icon__tel.png" class="mr-2 d-block d-sm-none">
+						<span>+7 846 340-58-80</span>
+					</a>
+				</div>
+				<a href="mailto:sales@gst-samara.ru" class="d-flex align-items-center footer__tel mb-3 mb-xl-0">
+					<img src="img/icon__mes_white.png" alt="icon__mes_white.png" class="mr-2">
+					<span>sales@gst-samara.ru</span>
+				</a>
+			</div>
+		</div>
+	</footer>
 	<div id="popup_call" class="popup__container" style="display:none">
 		<div  class="popup__wrp popup_call__wrp">
 			<form action="[[~[[*id]]]]" method="post" class="popup">
-				<h3 class="popup__ttl">Оставьте заявку</h3>
+				<div class="popup__ttl">Оставьте заявку</div>
 				<div class="input__wrp input__wrp_name">
 					<input type="text" class="form__input" name="popup_call__name" placeholder="Ваше имя" required="">
 				</div>
