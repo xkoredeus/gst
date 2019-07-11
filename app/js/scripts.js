@@ -64,11 +64,15 @@ $(function() {
       navText: ["<img src='img/prj-slider__arrow_prev.png'>", "<img src='img/prj-slider__arrow_next.png'>"]
     });
   };
-  // $('.prj__left-item:not(:first-child)').hide();
   $('.prj__right-item').hover(function(){
     var prj = $(this).attr('data-prj');
     $('.prj__left-item').removeClass('active');
     $('.prj__left-item[data-prj="'+prj+'"]').toggleClass('active');
+  });
+  $('.sol-page__list-item').hover(function(){
+    var sol = $(this).attr('data-sol');
+    $('.sol-page__right-img').removeClass('active');
+    $('.sol-page__right-img[data-sol="'+sol+'"]').toggleClass('active');
     console.log(prj);
   });
   $('.news__in').owlCarousel({
@@ -89,9 +93,6 @@ $(function() {
       }
     },
   });
-  // var prj = $('.service_sub__profile-item.active').attr('data-profile');
-  // $('.service_sub__image-big-item.active').removeClass('active');
-  // $('.service_sub__image-big-item[data-profile="'+profile+'"][data-color="'+color+'"]').addClass('active');
 
   //main-nav
   $('.header__nav-sub').hide();

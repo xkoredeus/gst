@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="theme-color" content="#6232ad">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<title>New Project</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="d-flex flex-column flex-xl-row align-items-center justify-content-center justify-content-xl-between">
+					<div class="d-flex flex-column flex-sm-row align-items-center mb-2 mb-xl-0 mr-xl-3 mb-xl-0">
+						<a href="tel:78463406191" class="d-flex align-items-center header__tel mr-sm-4 mb-3 mb-sm-0">
+							<img src="img/icon__tel.png" alt="icon__tel.png" class="mr-2">
+							<span>+7 846 340-61-91</span>
+						</a>
+						<a href="tel:78463405880" class="d-flex align-items-center header__tel">
+							<img src="img/icon__tel.png" alt="icon__tel.png" class="mr-2 d-block d-sm-none">
+							<span>+7 846 340-58-80</span>
+						</a>
+					</div>
+					<div class="d-none d-xl-flex align-items-center header__tel mr-4">
+						<img src="img/icon__time_white.png" alt="icon__time_white.png" class="mr-2">
+						<span>Часы работы: пн.-пт. с 10:00 до 19:00</span>
+					</div>
+					<a href="mailto:sales@gst-samara.ru" class="d-none d-xl-flex align-items-center header__tel mr-4">
+						<img src="img/icon__mes_white.png" alt="icon__mes_white.png" class="mr-2">
+						<span>sales@gst-samara.ru</span>
+					</a>
+					<a href="#popup_call" data-fancybox class="btn">Оставить заявку</a>
+					<a href="#menu" data-fancybox class="header__hamb"></a>
+				</div>
+			</div>
+		</div>
+		<div class="header__bot">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-xl-2">
+						<div class="d-flex justify-content-center justify-content-xl-start mb-3 mb-xl-0">
+							<a href="#" class="header__logo">
+								<img src="img/main-logo.png" alt="main-logo.png" class="img-fluid">
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-8">
+						<div class="header__nav justify-content-between align-items-center" id="menu">
+							<img src="img/main-logo.png" alt="" class="header__nav-logo">
+							<div class="header__nav-link-wrp header__nav-link-wrp_sub">
+								<a href="#" class="header__nav-link">Решения и продукты</a>
+								<div class="header__nav-sub">
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Решения обработки и хранения данных</span>
+											<img src="img/icon__arr-right.png" alt="" class="ml-3">
+										</a>
+										<div class="header__nav-sub_2">
+											<a href="#" class="header__nav-sub_2-link">Системы хранения данных</a>
+											<a href="#" class="header__nav-sub_2-link">Серверы</a>
+											<a href="#" class="header__nav-sub_2-link">Облачная инфраструктура</a>
+										</div>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Оптимизация печати</span>
+											<img src="img/icon__arr-right.png" alt="" class="ml-3">
+										</a>
+										<div class="header__nav-sub_2">
+											<a href="#" class="header__nav-sub_2-link">Системы хранения данных</a>
+											<a href="#" class="header__nav-sub_2-link">Серверы</a>
+											<a href="#" class="header__nav-sub_2-link">Облачная инфраструктура</a>
+										</div>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Решения для визуализации</span>
+										</a>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Корпоративный портал</span>
+										</a>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Системы управления производством</span>
+										</a>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Информационная безопасность</span>
+										</a>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Сетевая инфраструктура</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="header__nav-link-wrp header__nav-link-wrp_sub">
+								<a href="#" class="header__nav-link">Услуги</a>
+								<div class="header__nav-sub">
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Решения обработки и хранения данных</span>
+											<img src="img/icon__arr-right.png" alt="" class="ml-3">
+										</a>
+										<div class="header__nav-sub_2">
+											<a href="#" class="header__nav-sub_2-link">Системы хранения данных</a>
+											<a href="#" class="header__nav-sub_2-link">Серверы</a>
+											<a href="#" class="header__nav-sub_2-link">Облачная инфраструктура</a>
+										</div>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Оптимизация печати</span>
+											<img src="img/icon__arr-right.png" alt="" class="ml-3">
+										</a>
+										<div class="header__nav-sub_2">
+											<a href="#" class="header__nav-sub_2-link">Системы хранения данных</a>
+											<a href="#" class="header__nav-sub_2-link">Серверы</a>
+											<a href="#" class="header__nav-sub_2-link">Облачная инфраструктура</a>
+										</div>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Решения для визуализации</span>
+										</a>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Корпоративный портал</span>
+										</a>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Системы управления производством</span>
+										</a>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Информационная безопасность</span>
+										</a>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Сетевая инфраструктура</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="header__nav-link-wrp">
+								<a href="#" class="header__nav-link">Реализованные проекты</a>
+							</div>
+							<div class="header__nav-link-wrp">
+								<a href="#" class="header__nav-link">Новости</a>
+							</div>
+							<div class="header__nav-link-wrp">
+								<a href="#" class="header__nav-link">Компания</a>
+							</div>
+							<div class="header__nav-link-wrp">
+								<a href="#" class="header__nav-link">Контакты</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2">
+						<form action="" class="header__search">
+							<input type="text" class="header__search-input" placeholder="Поиск">
+							<input type="submit" class="header__search-btn" value="" title="Нажмите для поиска">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="crumbs__wrp">
+		<div class="container">
+			<ul class="crumbs">
+				<li><a href="#">Главная</a></li>
+				<li>Наши вакансии</li>
+			</ul>
+		</div>
+	</div>
+	<main class="section_inner">
+		<div class="container">
+			<div class="section__ttl">Наши вакансии</div>
+			<p>ООО "Джи-Эс-Ти"– команда высокопрофессиональных специалистов, занимающаяся разработкой программного обеспечения любой сложности, автоматизацией бизнес-процессов и консультированием. Мы стремительно развиваемся и ищем специалистов, готовых стать частью команды и предлагать свои идеи, решения и новые подходы.</p>
+			<div class="row mt-5 mb-5">
+				<div class="col-xl-6 mb-4">
+					<div class="job__item job__item_hot shd">
+						<div class="job__item-flag"><span>Срочная вакансия</span></div>
+						<div class="job__item-ttl">Разработчик 1с</div>
+						<a href="#" class="und">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-xl-6 mb-4">
+					<div class="job__item job__item_fix shd">
+						<div class="job__item-flag"><span>Постоянная вакансия</span></div>
+						<div class="job__item-ttl">Менеджер по работе с VIP-клиентами</div>
+						<a href="#" class="und">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-xl-6 mb-4">
+					<div class="job__item job__item_hot shd">
+						<div class="job__item-flag"><span>Срочная вакансия</span></div>
+						<div class="job__item-ttl">Разработчик 1с</div>
+						<a href="#" class="und">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-xl-6 mb-4">
+					<div class="job__item job__item_fix shd">
+						<div class="job__item-flag"><span>Постоянная вакансия</span></div>
+						<div class="job__item-ttl">Менеджер по работе с VIP-клиентами</div>
+						<a href="#" class="und">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-xl-6 mb-4">
+					<div class="job__item job__item_hot shd">
+						<div class="job__item-flag"><span>Срочная вакансия</span></div>
+						<div class="job__item-ttl">Разработчик 1с</div>
+						<a href="#" class="und">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-xl-6 mb-4">
+					<div class="job__item job__item_fix shd">
+						<div class="job__item-flag"><span>Постоянная вакансия</span></div>
+						<div class="job__item-ttl">Менеджер по работе с VIP-клиентами</div>
+						<a href="#" class="und">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-xl-6 mb-4">
+					<div class="job__item job__item_hot shd">
+						<div class="job__item-flag"><span>Срочная вакансия</span></div>
+						<div class="job__item-ttl">Разработчик 1с</div>
+						<a href="#" class="und">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-xl-6 mb-4">
+					<div class="job__item job__item_fix shd">
+						<div class="job__item-flag"><span>Постоянная вакансия</span></div>
+						<div class="job__item-ttl">Менеджер по работе с VIP-клиентами</div>
+						<a href="#" class="und">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="job__info shd">
+				<div class="section__ttl">Хотите работать в сфере IT, а именно в компании ООО «Джи-Эс-Ти», но в данный момент нет вакансии, соответствующей вашим компетенциям?</div>
+				<div class="row align-items-end">
+					<div class="col-xl-6 mb-3 mb-xl-0">
+						<div class="section__subttl mt-0 mb-2">И при этом:</div>
+						<div class="p-3">
+							<div>желаете участвовать в интересных проектах;</div>
+							<div>любите сложные и амбициозные задачи;</div>
+							<div>работаете так, чтобы было чем гордиться;</div>
+							<div>постоянно продолжаете совершенствовать ваши навыки;</div>
+							<div>и осваивать новые области знаний;</div>
+							<div>умеете работать в командем;</div>
+						</div>
+					</div>
+					<div class="col-xl-6">
+						<div class="job__info-item">
+							<div class="b mb-3">Сообщите нам об этом по адресу: <br> <a href="mailto:">sales@gst-samara.ru</a></div>
+							<span>Ваше резюме будет рассмотрено и с Вами свяжутся для обсуждения вариантов сотрудничества.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<section class="section_inner job-offer">
+		<div class="container">
+			<div class="section__ttl">Мы предлагаем</div>
+			<div class="row">
+				<div class="col-xl-4 col-sm-6 mb-3">
+					<div class="job-offer__item shd">
+						<div class="job-offer__item-bg" style="background-image: url(img/job-offer__item-bg_1.jpg) "></div>
+						<div class="job-offer__item-img-wrp">
+							<div class="job-offer__item-img job-offer__item-img_1" style="background-image: url(img/job__offer_img_1-1.png);"></div>
+							<div class="job-offer__item-img job-offer__item-img_2" style="background-image: url(img/job__offer_img_1-2.png);"></div>
+						</div>
+						<div class="job-offer__item-ttl">Достойную заработную плату и повышение профессионального уровня</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-sm-6 mb-3">
+					<div class="job-offer__item shd">
+						<div class="job-offer__item-bg" style="background-image: url(img/job-offer__item-bg_1.jpg) "></div>
+						<div class="job-offer__item-img-wrp">
+							<div class="job-offer__item-img job-offer__item-img_1" style="background-image: url(img/job__offer_img_2-1.png);"></div>
+							<div class="job-offer__item-img job-offer__item-img_2" style="background-image: url(img/job__offer_img_2-2.png);"></div>
+						</div>
+						<div class="job-offer__item-ttl">Достойную заработную плату и повышение профессионального уровня</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-sm-6 mb-3">
+					<div class="job-offer__item shd">
+						<div class="job-offer__item-bg" style="background-image: url(img/job-offer__item-bg_1.jpg) "></div>
+						<div class="job-offer__item-img-wrp">
+							<div class="job-offer__item-img job-offer__item-img_1" style="background-image: url(img/job__offer_img_3-1.png);"></div>
+							<div class="job-offer__item-img job-offer__item-img_2" style="background-image: url(img/job__offer_img_3-2.png);"></div>
+						</div>
+						<div class="job-offer__item-ttl">Достойную заработную плату и повышение профессионального уровня</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-sm-6 mb-3">
+					<div class="job-offer__item shd">
+						<div class="job-offer__item-bg" style="background-image: url(img/job-offer__item-bg_1.jpg) "></div>
+						<div class="job-offer__item-img-wrp">
+							<div class="job-offer__item-img job-offer__item-img_1" style="background-image: url(img/job__offer_img_4-1.png);"></div>
+							<div class="job-offer__item-img job-offer__item-img_2" style="background-image: url(img/job__offer_img_4-2.png);"></div>
+						</div>
+						<div class="job-offer__item-ttl">Достойную заработную плату и повышение профессионального уровня</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-sm-6 mb-3">
+					<div class="job-offer__item shd">
+						<div class="job-offer__item-bg" style="background-image: url(img/job-offer__item-bg_1.jpg) "></div>
+						<div class="job-offer__item-img-wrp">
+							<div class="job-offer__item-img job-offer__item-img_1" style="background-image: url(img/job__offer_img_5-1.png);"></div>
+							<div class="job-offer__item-img job-offer__item-img_2" style="background-image: url(img/job__offer_img_5-2.png);"></div>
+						</div>
+						<div class="job-offer__item-ttl">Достойную заработную плату и повышение профессионального уровня</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-sm-6 mb-3">
+					<div class="job-offer__item shd">
+						<div class="job-offer__item-bg" style="background-image: url(img/job-offer__item-bg_1.jpg) "></div>
+						<div class="job-offer__item-img-wrp">
+							<div class="job-offer__item-img job-offer__item-img_1" style="background-image: url(img/job__offer_img_6-1.png);"></div>
+							<div class="job-offer__item-img job-offer__item-img_2" style="background-image: url(img/job__offer_img_6-2.png);"></div>
+						</div>
+						<div class="job-offer__item-ttl">Достойную заработную плату и повышение профессионального уровня</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row mb-3">
+				<div class="col-xl-4 col-sm-6 mb-4">
+					<div class="footer__ttl footer__ttl_mobile mb-3">Обсудить проект</div>
+					<div class="d-flex flex-column flex-xl-row justify-content-between">
+						<div class="d-flex flex-column">
+							<a href="#" class="footer__link mb-1">Решения и продукты</a>
+							<a href="#" class="footer__link mb-1">Услуги</a>
+							<a href="#" class="footer__link mb-1">О компании</a>
+							<a href="#" class="footer__link mb-1">Реализованнные проекты</a>
+							<a href="#" class="footer__link mb-1">Партнеры</a>
+						</div>
+						<div class="d-flex flex-column">
+							<a href="#" class="footer__link mb-1">Вакансии</a>
+							<a href="#" class="footer__link mb-1">Компетенции</a>
+							<a href="#" class="footer__link mb-1">Контакты</a>
+							<a href="#" class="footer__link mb-1">Новости</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6 col-sm-6 mb-4">
+					<div class="footer__ttl footer__ttl_mobile mb-3">Популярные ссылки</div>
+					<div class="d-flex flex-column flex-xl-row justify-content-between">
+						<div class="d-flex flex-column">
+							<a href="#" class="footer__link mb-1">Решения обработки и хранения данных</a>
+							<a href="#" class="footer__link mb-1">Оптимизация печати</a>
+							<a href="#" class="footer__link mb-1">Решения для визуализации</a>
+							<a href="#" class="footer__link mb-1">Корпоративный портал</a>
+							<a href="#" class="footer__link mb-1">Системы управления производством</a>
+						</div>
+						<div class="d-flex flex-column">
+							<a href="#" class="footer__link mb-1">Информационная безопасность</a>
+							<a href="#" class="footer__link mb-1">Сетевая инфраструктура</a>
+							<a href="#" class="footer__link mb-1">ИТ аутсорсинг</a>
+							<a href="#" class="footer__link mb-1">ИТ консалтинг</a>
+							<a href="#" class="footer__link mb-1">Сервисное обслуживание</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-2 mb-4">
+					<div class="footer__ttl mb-3">Соцсети</div>
+					<div class="d-flex flex-column">
+						<div class="d-flex justify-content-center justify-content-xl-between footer__soc mb-3 mb-xl-4">
+							<a href="#" target="_blank" class="footer__soc-item mr-3 mr-xl-0"><img src="img/icon__fb.png" alt=""></a>
+							<a href="#" target="_blank" class="footer__soc-item mr-3 mr-xl-0"><img src="img/icon__vk.png" alt=""></a>
+							<a href="#" target="_blank" class="footer__soc-item mr-3 mr-xl-0"><img src="img/icon__in.png" alt=""></a>
+							<a href="#" target="_blank" class="footer__soc-item"><img src="img/icon__yt.png" alt=""></a>
+						</div>
+						<a href="#popup_call" data-fancybox class="btn">Оставить заявку</a>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex flex-xl-row flex-column align-items-center align-items-xl-end justify-content-between">
+				<div class="d-flex align-items-end mb-3 mb-xl-0">
+					<a href="#" class="footer__logo mr-4">
+						<img src="img/footer__logo.png" alt="footer__logo.png">
+					</a>
+					<div class="footer__copy">© 2019<br>ООО "Джи-Эс-Ти</div>
+				</div>
+				<div class="d-flex align-items-center footer__tel mr-xl-4 mb-3 mb-xl-0">
+					<img src="img/icon__geo_white.png" alt="icon__geo_white.png" class="mr-2" style="width:15px">
+					<span>Самара, ул. Чапаевская, д. 112А</span>
+				</div>
+				<div class="d-flex flex-column flex-sm-row align-items-center mb-3 mb-xl-0">
+					<a href="tel:78463406191" class="d-flex align-items-center footer__tel mr-sm-4 mb-3 mb-sm-0">
+						<img src="img/icon__tel.png" alt="icon__tel.png" class="mr-2">
+						<span>+7 846 340-61-91</span>
+					</a>
+					<a href="tel:78463405880" class="d-flex align-items-center footer__tel">
+						<img src="img/icon__tel.png" alt="icon__tel.png" class="mr-2 d-block d-sm-none">
+						<span>+7 846 340-58-80</span>
+					</a>
+				</div>
+				<a href="mailto:sales@gst-samara.ru" class="d-flex align-items-center footer__tel mb-3 mb-xl-0">
+					<img src="img/icon__mes_white.png" alt="icon__mes_white.png" class="mr-2">
+					<span>sales@gst-samara.ru</span>
+				</a>
+			</div>
+		</div>
+	</footer>
+	<div id="popup_call" class="popup__container" style="display:none">
+		<div  class="popup__wrp popup_call__wrp">
+			<form action="[[~[[*id]]]]" method="post" class="popup">
+				<div class="popup__ttl">Оставьте заявку</div>
+				<div class="input__wrp input__wrp_name">
+					<input type="text" class="form__input" name="popup_call__name" placeholder="Ваше имя" required="">
+				</div>
+				<div class="input__wrp input__wrp_tel">
+					<input type="tel" class="form__input" name="popup_call__tel" placeholder="Телефон" required="">
+				</div>
+				<div class="input__wrp input__wrp_mail">
+					<input type="email" class="form__input" name="popup_call__email" placeholder="E-mail">
+				</div>
+				<input type="submit" class="btn" name="popup_call__sumbit" value="Заказать">
+				<div class="popup__policy">
+					Нажимая кнопку "Отправить", вы соглашаетесь с <a href="#" class="form__policy-link">политикой конфиденциальности</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="js/libs.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

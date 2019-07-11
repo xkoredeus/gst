@@ -6,7 +6,6 @@ $dpurp: #1C1248
 $dark: #151515
 $lblue: #C9C2DF
 $blue: #26166F
-$dblue: #26166F
 $gray: #DFDEE3
 $tr: transparent
 
@@ -15,13 +14,12 @@ $ureg: 'Ubuntu'
 $umed: 'Ubuntu-Medium'
 $ubold: 'Ubuntu-Bold'
 
-
 body
 	scroll-behavior: smooth
 	background-color: #fff
 	font-family: $ureg
 	color: $dark
-	font-size: 14px
+	font-size: 16px
 	line-height: 1.3
 	position: relative
 	-webkit-font-smoothing: antialiased
@@ -79,6 +77,29 @@ textarea:active
 	color: $dark
 	box-shadow: inset 0px 1px 3px 1px $purp
 	outline: none
+.select__wrp
+	border: 1px solid #BDBDBD
+	border-radius: 3px
+	position: relative
+	min-width: 270px
+	background-color: #fff
+	&::before
+		content: ''
+		position: absolute
+		width: 10px
+		height: 6px
+		background: url('../img/icon__arr-bot.png') no-repeat 50% 50% / contain
+		top: 50%
+		margin-top: -4px
+		right: 10px
+	select
+		width: 100%
+		background-color: $tr
+		padding: 8px 40px 8px 12px
+		position: relative
+		appearance: none
+		option
+			width: 100%
 .tabs
 	&__list
 		list-style-type: none
@@ -112,7 +133,7 @@ textarea:active
 		&::before
 			content: ''
 			position: absolute
-			top: 0px
+			top: -1px
 			left: -2px
 			width: 20px
 			height: 20px
@@ -123,7 +144,7 @@ textarea:active
 			content: ''
 			position: absolute
 			top: 50%
-			margin-top: -11px
+			margin-top: -12px
 			left: 2px
 			width: 12px
 			height: 12px
@@ -150,6 +171,8 @@ textarea:active
 	text-align: center
 .tal
 	text-align: left !important
+.m
+	font-family: $umed
 .b
 	font-family: $ubold
 .img-fluid
@@ -194,7 +217,8 @@ textarea:active
 				position: absolute
 				width: 8px
 				height: 8px
-				background-color: #EE414F
+				background-color: $tr
+				border: 1.5px solid #000
 				left: 0
 				top: 8px
 				border-radius: 50%
@@ -219,8 +243,8 @@ textarea:active
 	padding: 40px
 	background-color: $tr
 	.fancybox-close-small
-		top: 40px
-		right: 40px
+		top: 5px
+		right: 5px
 		color: $dark
 	.popup__wrp
 		display: -webkit-flex
@@ -352,6 +376,7 @@ textarea:active
 	margin-left: 0
 	margin-bottom: 0
 	padding: 10px 0
+	font-size: 14px
 	li,
 	a
 		position: relative
@@ -371,7 +396,7 @@ textarea:active
 			&:hover
 				opacity: .7
 	li:last-child
-		color: $dblue
+		color: $blue
 .section
 	&_inner
 		padding: 60px 0
@@ -383,10 +408,12 @@ textarea:active
 		text-align: center
 	&__subttl
 		text-align: center
-		font-size: 18px
+		font-family: $umed
+		font-size: 20px
 		margin-top: -25px
 		margin-bottom: 35px
 .header
+	font-size: 14px
 	background: url('../img/header__bg.jpg') no-repeat 50% 50% / cover
 	overflow: hidden
 	&__top
@@ -617,6 +644,75 @@ textarea:active
 			transform: translateY(-3px)
 			.sol__item-top
 				background-color: $yel
+	&-page
+		&__right
+			width: 100%
+			min-height: 243px
+			height: 100%
+			border-radius: 3px
+			overflow: hidden
+			position: relative
+			&-img
+				position: absolute
+				width: 100%
+				height: 100%
+				left: 0
+				top: 0
+				transform: translateX(-20px)
+				opacity: 0
+				background-position: 50% 50%
+				background-repeat: no-repeat
+				background-size: cover
+				&.active
+					opacity: 1
+					transform: translateX(0)
+		&__list
+			&-item
+				padding: 10px 15px 10px 35px
+				position: relative
+				background-color: #FFFFFF
+				box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
+				border-radius: 3px
+				display: block
+				span
+					color: #000
+				&:not(:last-child)
+					margin-bottom: 7px
+				&::before
+					content: ''
+					position: absolute
+					left: 0
+					top: 0
+					width: 120%
+					transform: translateX(-20px)
+					opacity: 0
+					height: 100%
+					background-color: $blue
+					border-radius: 3px
+					transition: .5s all ease
+				&::after
+					content: ''
+					position: absolute
+					width: 14px
+					height: 14px
+					border: 2px solid #000
+					border-radius: 50%
+					transform: scale(.5)
+					left: 10px
+					top: 50%
+					margin-top: -7px
+				span
+					position: relative
+				&:hover
+					span
+						color: #fff
+					&::after
+						background-color: #fff
+						border-color: #fff
+						transform: scale(1)
+					&::before
+						transform: translateX(0)
+						opacity: 1
 .out
 	color: #fff
 	background: url('../img/out__bg.jpg') no-repeat 50% 50% / cover
@@ -628,7 +724,7 @@ textarea:active
 		height: 100%
 		right: 0
 		top: 0
-		background-color: $dblue
+		background-color: $blue
 		opacity: .8
 	.container
 		position: relative
@@ -673,6 +769,8 @@ textarea:active
 		position: absolute
 		right: 30px
 		bottom: -50px
+main
+	background: #fdfdfe url('../img/main__bg.png') no-repeat 50% 100%
 .about
 	background: url('../img/about__bg.jpg') no-repeat 50% 50% / cover
 	position: relative
@@ -697,7 +795,7 @@ textarea:active
 			font-family: $ubold
 			margin-bottom: 15px
 	&-begin
-		background: url('../img/about__begin-bg.jpg') no-repeat 50% 50% / cover
+		// background: url('../img/about__begin-bg.jpg') no-repeat 50% 50% / cover
 		&__item
 			max-width: 190px
 			width: 100%
@@ -837,6 +935,38 @@ textarea:active
 			background-position: 50% 50%
 			background-repeat: no-repeat
 			background-size: contain
+	&__list
+		.clients__item
+			width: 270px
+			height: 270px
+			position: relative
+			overflow: hidden
+			.b
+				font-size: 18px
+			&-descr
+				font-size: 14px
+			&-in
+				position: absolute
+				width: 100%
+				height: 100%
+				left: 0
+				top: 0
+				padding: 15px
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				background-color: #fff
+				opacity: 0
+				transform: scale(.8)
+				transition: .5s all ease
+				a
+					color: $blue
+					&:hover
+						transform: translateX(4px)
+			&:hover
+				.clients__item-in
+					opacity: 1
+					transform: scale(1)
 .part
 	.section__ttl
 		font-size: 24px
@@ -973,6 +1103,82 @@ textarea:active
 			font-size: 28px
 		&-descr
 			color: #969696
+	&__list
+		&-item
+			display: flex
+			flex-direction: column
+			max-width: 370px
+			margin-left: auto
+			margin-right: auto
+			border-radius: 4px
+			overflow: hidden
+			background-color: #fff
+			&-img
+				width: 100%
+				height: 320px
+				background-position: 50% 50%
+				background-size: cover
+				background-repeat: no-repeat
+			&-bot
+				padding-left: 20px
+				padding-right: 20px
+				padding-bottom: 30px
+			&-date
+				filter: grayscale(80%)
+			&-ttl
+				font-size: 20px
+	&-page
+		&__in
+			background-color: #fff
+			border-radius: 4px
+			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
+			padding: 30px
+			position: relative
+			overflow: hidden
+			&::after
+				content: ''
+				clear: both
+		&__img
+			width: 100%
+			max-width: 440px
+			height: 303px
+			float: left
+			margin-right: 30px
+			margin-bottom: 20px
+			background-position: 50% 50%
+			background-size: cover
+			background-repeat: no-repeat
+			border-radius: 4px
+		&__more
+			&-item
+				display: flex
+				max-width: 570px
+				margin-left: auto
+				margin-right: auto
+				border-radius: 4px
+				overflow: hidden
+				background-color: #fff
+				&-img
+					width: 100%
+					min-width: 220px
+					height: 100%
+					min-height: 270px
+					background-position: 50% 50%
+					background-size: cover
+					background-repeat: no-repeat
+				&-bot
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: flex-start
+					padding-left: 20px
+					padding-right: 20px
+					padding-bottom: 30px
+				&-date
+					filter: grayscale(80%)
+				&-ttl
+					font-size: 20px
+
 .map
 	position: relative
 	.container
@@ -996,6 +1202,7 @@ textarea:active
 		&-input
 			width: 100%
 .footer
+	font-size: 14px
 	background-color: #000
 	padding: 40px 0
 	color: #fff
@@ -1040,3 +1247,309 @@ textarea:active
 		&:hover
 			img
 				transform: scale(.9)
+.contacts
+	&-feed
+		overflow: hidden
+		&__left
+			font-size: 18px
+			padding-left: 30px
+			padding-right: 10px
+			color: #fff
+			position: relative
+			height: 100%
+			a
+				color: #fff
+				&:hover
+					color: $yel
+			&::before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				left: 0
+				top: 0
+				background-color: $blue
+				opacity: .8
+				z-index: 1
+			&::after
+				content: ''
+				position: absolute
+				right: 0
+				top: 0
+				width: 200%
+				height: 100%
+				background: url('../img/contacts-feed__left-bg.jpg') no-repeat 50% 50% / cover
+			&>*
+				position: relative
+				z-index: 1
+		&__right
+			position: relative
+			font-size: 18px
+			padding-left: 40px
+			&::before
+				content: ''
+				position: absolute
+				width: 200%
+				height: 100%
+				left: 0
+				top: 0
+				background-color: #F9F9F9
+			&>*
+				position: relative
+		&__input
+			width: 100%
+			max-width: 470px
+	&-req
+		overflow: hidden
+		&__left
+			font-size: 18px
+			padding-left: 30px
+			padding-right: 10px
+			position: relative
+			height: 100%
+			&::before
+				content: ''
+				position: absolute
+				width: 200%
+				height: 100%
+				right: 0
+				top: 0
+				background-color: #F9F9F9
+			&>*
+				position: relative
+		&__right
+			position: relative
+			font-size: 18px
+			padding-left: 40px
+			&::before
+				content: ''
+				position: absolute
+				width: 200%
+				height: 100%
+				left: 0
+				top: 0
+				background-color: #F9F9F9
+			&>*
+				position: relative
+		&__right
+			position: relative
+			height: 100%
+			&::before
+				content: ''
+				position: absolute
+				right: 0
+				top: 0
+				width: 200%
+				height: 100%
+				background: url('../img/contacts-feed__left-bg.jpg') no-repeat 50% 50% / cover
+			&>*
+.job
+	&__item
+		padding: 30px
+		background-color: #fff
+		border-radius: 4px
+		overflow: hidden
+		min-height: 240px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: flex-start
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			width: 174px
+			height: 200px
+			top: 50%
+			margin-top: -100px
+			right: 30px
+			background-position: 50% 50%
+			background-size: contain
+			background-repeat: no-repeat
+		&>*
+			position: relative
+		&-ttl
+			font-size: 28px
+			font-family: $ubold
+			max-width: 300px
+		&-flag
+			color: #fff
+			font-family: $ubold
+			position: relative
+			padding: 15px 30px 15px 0
+			// display: inline
+			&::before
+				content: ''
+				position: absolute
+				left: -40px
+				top: 0
+				width: 130%
+				height: 100%
+				transform: skew(-20deg)
+			span
+				position: relative
+		&_hot
+			&::before
+				background-image: url('../img/job__img_1.png')
+			.job__item-flag
+				&::before
+					background-color: #FA712D
+		&_fix
+			&::before
+				background-image: url('../img/job__img_2.png')
+			.job__item-flag
+				&::before
+					background-color: $blue
+	&__info
+		background-color: #fff
+		border-radius: 4px
+		padding: 40px
+		.section
+			&__ttl
+				font-size: 26px
+				font-family: $ureg
+			&__subttl
+				font-size: 26px
+				font-family: $ubold
+				text-align: left
+		&-item
+			max-width: 370px
+			margin-left: auto
+			margin-right: auto
+			padding: 25px
+			background: url('../img/job__info-bg.jpg') no-repeat 50% 50% / cover
+	&-offer
+		background-color: #FEF4D3
+		&__item
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			padding: 20px 15px
+			min-height: 205px
+			height: 100%
+			max-width: 370px
+			margin-left: auto
+			margin-right: auto
+			border-radius: 3px
+			overflow: hidden
+			position: relative
+			background-color: #fff
+			&>*
+				position: relative
+				z-index: 1
+			&-bg
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				left: 0
+				top: 0
+				background-position: 50% 50%
+				background-size: cover
+				background-repeat: no-repeat
+				opacity: 0
+				border-radius: 3px
+				transition: .5s all ease
+				// transform: scale(.7)
+			&::before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				left: 0
+				top: 0
+				background-position: 50% 50%
+				background-size: cover
+				background-repeat: no-repeat
+				opacity: 0
+				border-radius: 3px
+				background-color: $blue
+				z-index: 2
+				transition: .5s all ease
+			&-ttl
+				font-size: 18px
+				text-align: center
+				position: relative
+				z-index: 3
+			&-img
+				position: absolute
+				left: 0
+				top: 0
+				height: 100%
+				width: 100%
+				background-position: 50% 50%
+				background-size: contain
+				background-repeat: no-repeat
+				&_2
+					opacity: 0
+				&-wrp
+					width: 100%
+					height: 75px
+					margin-bottom: 10px
+					position: relative
+					z-index: 3
+			&:hover
+				.job-offer__item
+					&-ttl
+						color: #fff
+					&-img
+						&_1
+							opacity: 0
+						&_2
+							opacity: 1
+					&-bg
+						opacity: 1
+						transform: scale(1.2)
+				&::before
+					opacity: .9
+	&-page
+		font-size: 18px
+		background-color: #fff
+		border-radius: 4px
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
+		padding: 30px
+		position: relative
+		overflow: hidden
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: flex-start
+		&::before
+			content: ''
+			position: absolute
+			width: 174px
+			height: 200px
+			top: 40px
+			right: 30px
+			background-position: 50% 50%
+			background-size: contain
+			background-repeat: no-repeat
+		&::before
+				background-image: url('../img/job__img_1.png')
+		&::before
+				background-image: url('../img/job__img_2.png')
+		&>*
+			position: relative
+		&__flag
+			color: #fff
+			font-family: $ubold
+			position: relative
+			padding: 15px 30px 15px 0
+			margin-bottom: 15px
+			&::before
+				content: ''
+				position: absolute
+				left: -40px
+				top: 0
+				width: 130%
+				height: 100%
+				transform: skew(-20deg)
+			&_hot
+				&::before
+					background-color: #FA712D
+			&_fix
+					&::before
+						background-color: $blue
+			span
+				position: relative

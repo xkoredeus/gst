@@ -114,10 +114,19 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .about-part .section__ttl {
+    text-align: center !important;
+  }
+  .contacts-feed__right {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .section__ttl {
+  .section__ttl,
+  .job__info .section__ttl,
+  .job__item-ttl {
     font-size: 23px;
   }
   .news__item-ttl,
@@ -180,15 +189,15 @@
     width: 100%;
     padding: 15px;
   }
-  .map__form__link {
+  .footer__link {
     -webkit-transition: unset;
     -o-transition: unset;
     transition: unset;
   }
-  .map__form__ttl_mobile {
+  .footer__ttl_mobile {
     position: relative;
   }
-  .map__form__ttl_mobile::after {
+  .footer__ttl_mobile::after {
     content: '';
     position: absolute;
     width: 10px;
@@ -203,7 +212,7 @@
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
   }
-  .map__form__ttl_mobile.active::after {
+  .footer__ttl_mobile.active::after {
     top: 9px;
     -webkit-transform: rotate(45deg) scale(-1, -1);
         -ms-transform: rotate(45deg) scale(-1, -1);
@@ -211,6 +220,24 @@
   }
   .footer__tel:nth-child(1)::before {
     display: none;
+  }
+  .about-part .btn {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .job__info {
+    padding: 20px;
+  }
+  .news-page__more-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 370px;
+  }
+  .news-page__more-item-img {
+    margin-bottom: 15px;
   }
 }
 

@@ -4,7 +4,6 @@ $dpurp: #1C1248
 $dark: #151515
 $lblue: #C9C2DF
 $blue: #26166F
-$dblue: #26166F
 $gray: #DFDEE3
 $tr: transparent
 
@@ -111,9 +110,17 @@ $ubold: 'Ubuntu-Bold'
 			max-width: 290px
 			margin-left: auto
 			margin-right: auto
+	.about-part
+		.section__ttl
+			text-align: center !important
+	.contacts-feed__right
+		padding-left: 15px
+		padding-right: 15px
 @media screen and (max-width: 768px)
 	
-	.section__ttl
+	.section__ttl,
+	.job__info .section__ttl,
+	.job__item-ttl
 		font-size: 23px
 	.news__item-ttl,
 	.section__subttl
@@ -162,7 +169,7 @@ $ubold: 'Ubuntu-Bold'
 	.map__form
 		width: 100%
 		padding: 15px
-	
+	.footer
 		&__link
 			transition: unset
 		&__ttl_mobile
@@ -186,6 +193,17 @@ $ubold: 'Ubuntu-Bold'
 	.footer
 		&__tel:nth-child(1)::before
 			display: none
+	.about-part
+		.btn
+			margin-left: 0
+			margin-top: 10px
+	.job__info
+		padding: 20px
+	.news-page__more-item
+		flex-direction: column
+		max-width: 370px
+		&-img
+			margin-bottom: 15px
 @media screen and (max-width: 420px)
 	.header
 		&__nav
