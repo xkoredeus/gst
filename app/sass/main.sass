@@ -62,7 +62,7 @@ select
 	padding: 12px 30px
 	background: #fff
 	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5)
-	border: 1px solid #C9C2DF
+	border: 1px solid $lblue
 	border-radius: 3px
 input.btn
 	box-shadow: none
@@ -180,23 +180,41 @@ textarea:active
 		&:hover
 			background: rgb(0,87,255)
 			border-color: rgb(0,87,255)
-.list_circle
-	list-style-type: none
-	padding-left: 0
-	li
-		padding-left: 25px
-		position: relative
-		&
-			margin-bottom: 10px
-		&::before
-			content: ''
-			position: absolute
-			width: 8px
-			height: 8px
-			background-color: #EE414F
-			left: 0
-			top: 8px
-			border-radius: 50%
+.list
+	&_circle
+		list-style-type: none
+		padding-left: 0
+		li
+			padding-left: 25px
+			position: relative
+			&
+				margin-bottom: 10px
+			&::before
+				content: ''
+				position: absolute
+				width: 8px
+				height: 8px
+				background-color: #EE414F
+				left: 0
+				top: 8px
+				border-radius: 50%
+	&_gal
+		list-style-type: none
+		padding-left: 0
+		li
+			font-size: 16px
+			padding-left: 35px
+			position: relative
+			&
+				margin-bottom: 10px
+			&::before
+				content: ''
+				position: absolute
+				width: 26px
+				height: 18px
+				background: url('../img/icon__gal.png') no-repeat 50% 50% / contain
+				left: 0
+				top: 2px
 .popup__container
 	padding: 40px
 	background-color: $tr
@@ -326,6 +344,34 @@ textarea:active
 			left: -30px
 		button.owl-next
 			right: -30px
+.crumbs
+	display: flex
+	flex-wrap: wrap
+	list-style-type: none
+	padding-left: 0
+	margin-left: 0
+	margin-bottom: 0
+	padding: 10px 0
+	li,
+	a
+		position: relative
+		color: #000
+	li:not(:last-child)
+		margin-right: 20px
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			width: 9px
+			height: 7px
+			right: -15px
+			top: 6px
+			background: url(../img/icon__crumbs-arr.png) no-repeat 50% 50%/contain
+		a
+			&:hover
+				opacity: .7
+	li:last-child
+		color: $dblue
 .section
 	&_inner
 		padding: 60px 0
@@ -650,9 +696,112 @@ textarea:active
 			font-size: 20px
 			font-family: $ubold
 			margin-bottom: 15px
+	&-begin
+		background: url('../img/about__begin-bg.jpg') no-repeat 50% 50% / cover
+		&__item
+			max-width: 190px
+			width: 100%
+			margin: 0px 15px 30px
+			text-align: center
+			display: flex
+			flex-direction: column
+			align-items: center
+			&-top
+				width: 100%
+				height: 130px
+				background-color: #fff
+				border-radius: 5px
+				margin-bottom: 15px
+				display: flex
+				justify-content: center
+				align-items: center
+			&-img
+				width: 70px
+				height: 70px
+				background-position: 50% 50%
+				background-repeat: no-repeat
+				background-size: contain
+			&-ttl
+				font-size: 18px
+				font-family: $ubold
+				margin-bottom: 10px
+			&:hover
+				transform: translateY(-3px)
+				.about-begin__item-top
+					background-color: $yel
+		.list_gal
+			font-size: 18px
+	&-part
+		color: #fff
+		background: url('../img/clients__bg.jpg') no-repeat 50% 50% / cover
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			right: 0
+			top: 0
+			background: linear-gradient(106.09deg, #36275c 0.94%, #8777ce91 100%)
+			// opacity: .8
+		.container
+			position: relative
+		.btn
+			margin-left: -4px
+		&__policy
+			font-size: 16px
+			a
+				color: $yel
+				text-decoration: underline
+				&:hover
+					opacity: .7
+					text-decoration: none
+	&-princ
+		font-size: 16px
+		background: url('../img/about__bg.jpg') no-repeat 50% 50% / cover
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			right: 0
+			top: 0
+			background-color: $gray
+			opacity: .8
+		.container
+			position: relative
+	&-dir
+		background: url('../img/about__dir-bg.jpg') no-repeat 50% 50% / cover
+		.about__item
+			height: 100%
+.team
+	background-color: $lblue
+	&__item
+		max-width: 370px
+		margin-left: auto
+		margin-right: auto
+		background-color: #fff
+		border-radius: 3px
+		overflow: hidden
+		&-img
+			width: 100%
+			height: 300px
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			background-size: cover
+		&-info
+			padding: 15px 20px
+		&-ttl
+			font-family: $ubold
+			color: $blue
+			font-size: 18px
+			margin-bottom: 15px
+		&-pos
+			font-size: 16px
 .clients
 	color: #fff
-	background: url('../img/clients__bg.jpg') no-repeat 50% 50% / cover
+	background: url('../img/clients__bg.jpg') no-repeat 50% 0% / cover
 	position: relative
 	&::before
 		content: ''
@@ -666,9 +815,12 @@ textarea:active
 	.container
 		position: relative
 	&__in
-
-		.clients__item
-			margin-bottom: 30px
+		.owl-nav button.owl
+			&-prev,
+			&-next
+				bottom: 62%
+	.clients__item
+		margin-bottom: 30px
 	&__item
 		background-color: #fff
 		border-radius: 5px
@@ -778,7 +930,7 @@ textarea:active
 				&:nth-child(3)
 					.prj__right-item
 						&:nth-child(1)
-							background-color: #C9C2DF
+							background-color: $lblue
 						&:nth-child(2)
 							background-color: #FADB89
 				&:nth-child(4)

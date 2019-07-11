@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="theme-color" content="#6232ad">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<title>New Project</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="d-flex flex-column flex-xl-row align-items-center justify-content-center justify-content-xl-between">
+					<div class="d-flex flex-column flex-sm-row align-items-center mb-2 mb-xl-0 mr-xl-3 mb-xl-0">
+						<a href="tel:78463406191" class="d-flex align-items-center header__tel mr-sm-4 mb-3 mb-sm-0">
+							<img src="img/icon__tel.png" alt="icon__tel.png" class="mr-2">
+							<span>+7 846 340-61-91</span>
+						</a>
+						<a href="tel:78463405880" class="d-flex align-items-center header__tel">
+							<img src="img/icon__tel.png" alt="icon__tel.png" class="mr-2 d-block d-sm-none">
+							<span>+7 846 340-58-80</span>
+						</a>
+					</div>
+					<div class="d-none d-xl-flex align-items-center header__tel mr-4">
+						<img src="img/icon__time_white.png" alt="icon__time_white.png" class="mr-2">
+						<span>Часы работы: пн.-пт. с 10:00 до 19:00</span>
+					</div>
+					<a href="mailto:sales@gst-samara.ru" class="d-none d-xl-flex align-items-center header__tel mr-4">
+						<img src="img/icon__mes_white.png" alt="icon__mes_white.png" class="mr-2">
+						<span>sales@gst-samara.ru</span>
+					</a>
+					<a href="#popup_call" data-fancybox class="btn">Оставить заявку</a>
+					<a href="#menu" data-fancybox class="header__hamb"></a>
+				</div>
+			</div>
+		</div>
+		<div class="header__bot">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-xl-2">
+						<div class="d-flex justify-content-center justify-content-xl-start mb-3 mb-xl-0">
+							<a href="#" class="header__logo">
+								<img src="img/main-logo.png" alt="main-logo.png" class="img-fluid">
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-8">
+						<div class="header__nav justify-content-between align-items-center" id="menu">
+							<img src="img/main-logo.png" alt="" class="header__nav-logo">
+							<div class="header__nav-link-wrp header__nav-link-wrp_sub">
+								<a href="#" class="header__nav-link">Решения и продукты</a>
+								<div class="header__nav-sub">
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Решения обработки и хранения данных</span>
+											<img src="img/icon__arr-right.png" alt="" class="ml-3">
+										</a>
+										<div class="header__nav-sub_2">
+											<a href="#" class="header__nav-sub_2-link">Системы хранения данных</a>
+											<a href="#" class="header__nav-sub_2-link">Серверы</a>
+											<a href="#" class="header__nav-sub_2-link">Облачная инфраструктура</a>
+										</div>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Оптимизация печати</span>
+											<img src="img/icon__arr-right.png" alt="" class="ml-3">
+										</a>
+										<div class="header__nav-sub_2">
+											<a href="#" class="header__nav-sub_2-link">Системы хранения данных</a>
+											<a href="#" class="header__nav-sub_2-link">Серверы</a>
+											<a href="#" class="header__nav-sub_2-link">Облачная инфраструктура</a>
+										</div>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Решения для визуализации</span>
+										</a>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Корпоративный портал</span>
+										</a>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Системы управления производством</span>
+										</a>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Информационная безопасность</span>
+										</a>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Сетевая инфраструктура</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="header__nav-link-wrp header__nav-link-wrp_sub">
+								<a href="#" class="header__nav-link">Услуги</a>
+								<div class="header__nav-sub">
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Решения обработки и хранения данных</span>
+											<img src="img/icon__arr-right.png" alt="" class="ml-3">
+										</a>
+										<div class="header__nav-sub_2">
+											<a href="#" class="header__nav-sub_2-link">Системы хранения данных</a>
+											<a href="#" class="header__nav-sub_2-link">Серверы</a>
+											<a href="#" class="header__nav-sub_2-link">Облачная инфраструктура</a>
+										</div>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Оптимизация печати</span>
+											<img src="img/icon__arr-right.png" alt="" class="ml-3">
+										</a>
+										<div class="header__nav-sub_2">
+											<a href="#" class="header__nav-sub_2-link">Системы хранения данных</a>
+											<a href="#" class="header__nav-sub_2-link">Серверы</a>
+											<a href="#" class="header__nav-sub_2-link">Облачная инфраструктура</a>
+										</div>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Решения для визуализации</span>
+										</a>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Корпоративный портал</span>
+										</a>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Системы управления производством</span>
+										</a>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Информационная безопасность</span>
+										</a>
+									</div>
+									<div class="header__nav-sub-link-wrp">
+										<a href="#" class="header__nav-sub-link">
+											<span>Сетевая инфраструктура</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="header__nav-link-wrp">
+								<a href="#" class="header__nav-link">Реализованные проекты</a>
+							</div>
+							<div class="header__nav-link-wrp">
+								<a href="#" class="header__nav-link">Новости</a>
+							</div>
+							<div class="header__nav-link-wrp">
+								<a href="#" class="header__nav-link">Компания</a>
+							</div>
+							<div class="header__nav-link-wrp">
+								<a href="#" class="header__nav-link">Контакты</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2">
+						<form action="" class="header__search">
+							<input type="text" class="header__search-input" placeholder="Поиск">
+							<input type="submit" class="header__search-btn" value="" title="Нажмите для поиска">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="crumbs__wrp">
+		<div class="container">
+			<ul class="crumbs">
+				<li><a href="#">Главная</a></li>
+				<li>О компании</li>
+			</ul>
+		</div>
+	</div>
+	<section class="section_inner about-begin">
+		<div class="container">
+			<div class="section__ttl">Решения и продукты для вашего бизнеса</div>
+			<div class="d-flex flex-wrap justify-content-center mb-4">
+				<div class="about-begin__item">
+					<div class="about-begin__item-top shd">
+						<div class="about-begin__item-img" style="background-image: url(img/about__begin-img_1.png)"></div>
+					</div>
+					<div class="about-begin__item-ttl">с 2005 года</div>
+					<div class="about-begin__item-descr">компания ООО "Джи-Эс-Ти" работает на самарском рынке ИТ-услуг</div>
+				</div>
+				<div class="about-begin__item">
+					<div class="about-begin__item-top shd">
+						<div class="about-begin__item-img" style="background-image: url(img/about__begin-img_2.png)"></div>
+					</div>
+					<div class="about-begin__item-ttl">более 50</div>
+					<div class="about-begin__item-descr">специалистов компании используют в своей работе передовые знания и огромный опыт</div>
+				</div>
+				<div class="about-begin__item">
+					<div class="about-begin__item-top shd">
+						<div class="about-begin__item-img" style="background-image: url(img/about__begin-img_3.png)"></div>
+					</div>
+					<div class="about-begin__item-ttl">95%</div>
+					<div class="about-begin__item-descr">наших клиентов повторно обращаются к нам и рекомендуют нас в качестве надежного партнёра</div>
+				</div>
+				<div class="about-begin__item">
+					<div class="about-begin__item-top shd">
+						<div class="about-begin__item-img" style="background-image: url(img/about__begin-img_4.png)"></div>
+					</div>
+					<div class="about-begin__item-ttl">65</div>
+					<div class="about-begin__item-descr">количество технологий, которыми владеют наши разработчики</div>
+				</div>
+				<div class="about-begin__item">
+					<div class="about-begin__item-top shd">
+						<div class="about-begin__item-img" style="background-image: url(img/about__begin-img_5.png)"></div>
+					</div>
+					<div class="about-begin__item-ttl">50</div>
+					<div class="about-begin__item-descr">уникальных продуктов разработано и внедрено нашими специалистами</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-6">
+					<div class="list_gal">
+						<li>Решения обработки и хранения данных</li>
+						<li>Оптимизация печати</li>
+						<li>Решения для визуализации</li>
+						<li>Корпоративный портал</li>
+						<li>Системы управления производством</li>
+					</div>
+				</div>
+				<div class="col-xl-6">
+					<div class="list_gal">
+						<li>Информационная безопасность</li>
+						<li>ИТ аутсорсинг</li>
+						<li>ИТ консалтинг</li>
+						<li>Сервисное обслуживание</li>
+						<li>Сетевая инфраструктура</li>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section_inner about-part">
+		<div class="container">
+			<div class="section__ttl">Ищете надёжного ИТ-партнёра?</div>
+			<form class="row align-items-center mb-4">
+				<div class="col-xl-6 mb-4 mb-xl-0">
+					<div class="section__ttl tal mb-0">Оставьте свой номер и наш менеджер свяжется с вами.</div>
+				</div>
+				<div class="col-xl-6">
+					<div class="d-flex justify-content-center">
+						<input type="tel" placeholder="Ваш номер телефона*" required="">
+						<input type="submit" class="btn" value="Отправить">
+					</div>
+				</div>
+			</form>
+			<div class="tac about-part__policy">Отправляя заявку, вы соглашаетесь на обработку <a href="#">персональных данных</a> в соответствии с <a href="#">Политикой конфиденциальности</a></div>
+		</div>
+	</section>
+	<section class="section_inner about-princ">
+		<div class="container">
+			<div class="section__ttl">Принципы компании</div>
+			<div class="row mb-3">
+				<div class="col-xl-6 mb-4 mb-xl-0">Джи-Эс-Ти работает на самарском рынке ИТ-услуг с 2005 года. За годы работы компания накопила опыт реализации проектов в различных областях информационных технологий. Благодаря тесным партнерским отношениям с мировыми производителями высокотехнологичного оборудования и программного обеспечения, таких как: Hitachi Data System, IBM, Fujitsu, Kraftway, Lenovo, D-Link, Xerox, Canon, Konica-Minolta, Brother, Microsoft Corporation, компания имеет возможность предложить своим клиентам новейшие высокотехнологичные продукты и эффективные решения. Джи-Эс-Ти работает для клиентов и вместе с ними. Каждый клиент компании – партнер по взаимовыгодному и долгосрочному сотрудничеству. Индивидуальный подход к решению любых задач – один из важных принципов работы. Исходя из этого, компания Джи-Эс-Ти стремимся предоставлять максимально качественные услуги для развития и продвижения бизнеса.</div>
+				<div class="col-xl-6">
+					<ul class="list_gal">
+						<li>выделенная группа экспертов и сертифицированных специалистов;</li>
+						<li>сильный инженерный состав и специалисты по Сервису;</li>
+						<li>демонстрации и тестирование перед покупкой;</li>
+						<li>гибкие финансовые условия;</li>
+						<li>сжатые сроки поставки заказного оборудования;</li>
+						<li>сервисные каналы поставки запчастей;</li>
+						<li>послепродажное сопровождение и обслуживание;</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mt-5 row">
+				<div class="col-xl-6 mb-3 mb-xl-0">
+					<div class="about__item shd">
+						<div class="about__item-ttl">Группа компаний МСК Групп</div>
+						<p>Сегодня Джи-Эс-Ти — успешная, динамично развивающаяся, компания, входящая в группу компаний МСК ГРУПП и использующая совместно накопленный опыт для осуществления сложных и амбициозных проектов. Основным направлением деятельности компании Джи-Эс-Ти является разработка комплексных решений о автоматизации технологических и бизнес-процессов предприятия для максимально эффективного управления.</p>
+					</div>
+				</div>
+				<div class="col-xl-6 mb-3 mb-xl-0">
+					<div class="about__item shd">
+						<div class="about__item-ttl">ЗАО «Центр Инженерных Компетенций»</div>
+						<p>Сегодня Джи-Эс-Ти — успешная, динамично развивающаяся, компания, входящая в группу компаний МСК ГРУПП и использующая совместно накопленный опыт для осуществления сложных и амбициозных проектов. Основным направлением деятельности компании Джи-Эс-Ти является разработка комплексных решений о автоматизации технологических и бизнес-процессов предприятия для максимально эффективного управления.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section_inner about-dir">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-4 col-sm-6 mb-3 mb-xl-0">
+					<div class="about__item shd">
+						<div class="about__item-ttl">Сферы деятельности</div>
+						<p>NET, SharePoint и SharePoint online, Java SE, Интеграционные решения (Oracle, IBM, Opensource), PHP (Symfony4, Yii2, Laravel), CMS (Bitrix, Drupal), JavaScript React/Angular/Vue), RDBMS (Oracle, MySQL, PosgreSQL), Системы хранения данных аналитической отчетности (Cloudera/Hadoop - HDFS, HBase, Hive/Impala).</p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-sm-6 mb-3 mb-xl-0">
+					<div class="about__item shd">
+						<div class="about__item-ttl">Сферы деятельности</div>
+						<p>Нашими заказчиками являются организации госсектора, производственные предприятия, банки и телекоммуникационные компании. Бизнес интересы компаний ООО "Джи-Эс- Ти" очень широки. Мы не боимся исследовать новые технологии и создаём собственные продукты, если не находим существующих аналогов.</p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-sm-6 mb-3 mb-xl-0">
+					<div class="about__item shd">
+						<div class="about__item-ttl">Наши люди</div>
+						<p>ООО "Джи-Эс-Ти" объединяет профессионалов своего дела: в данный момент в компании работают более 50 человек, и организация продолжает расширяться. Наша команда состоит из высококвалифицированных ИТ- специалистов, имеющих большой опыт в разработке программного обеспечения. Наша цель: поставлять продукцию высокого качества, предлагая уникальные решения для достижения бизнес целей, делая бизнес</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section_inner clients">
+		<div class="container">
+			<div class="section__ttl">Клиенты</div>
+			<div class="clients__in owl-carousel">
+				<div class="clients__item shd">
+					<div class="clients__item-img" style="background-image: url(img/clients__img_1.png)"></div>
+				</div>
+				<div class="clients__item shd">
+					<div class="clients__item-img" style="background-image: url(img/clients__img_2.png)"></div>
+				</div>
+				<div class="clients__item shd">
+					<div class="clients__item-img" style="background-image: url(img/clients__img_3.png)"></div>
+				</div>
+				<div class="clients__item shd">
+					<div class="clients__item-img" style="background-image: url(img/clients__img_4.png)"></div>
+				</div>
+				<div class="clients__item shd">
+					<div class="clients__item-img" style="background-image: url(img/clients__img_5.png)"></div>
+				</div>
+				<div class="clients__item shd">
+					<div class="clients__item-img" style="background-image: url(img/clients__img_1.png)"></div>
+				</div>
+				<div class="clients__item shd">
+					<div class="clients__item-img" style="background-image: url(img/clients__img_2.png)"></div>
+				</div>
+				<div class="clients__item shd">
+					<div class="clients__item-img" style="background-image: url(img/clients__img_3.png)"></div>
+				</div>
+			</div>
+			<div class="d-flex justify-content-center mt-3 mb-5">
+				<a href="#" class="btn">Посмотреть отзывы</a>
+			</div>
+		</div>
+	</section>
+	<section class="section_inner team">
+		<div class="container">
+			<div class="section__ttl">Команда ООО "Джи-Эс-Ти"</div>
+			<div class="row">
+				<div class="col-xl-3 col-sm-6 mb-3 mb-xl-0">
+					<div class="team__item shd">
+						<div class="team__item-img" style="background-image: url(img/team__img_1.jpg)"></div>
+						<div class="team__item-info">
+							<div class="team__item-ttl">Тнришков Николай Евгеньевич</div>
+							<div class="team__item-pos">Техничекий директор</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6 mb-3 mb-xl-0">
+					<div class="team__item shd">
+						<div class="team__item-img" style="background-image: url(img/team__img_2.jpg)"></div>
+						<div class="team__item-info">
+							<div class="team__item-ttl">Валиева Анна Николаевна</div>
+							<div class="team__item-pos">Главный бухгалтер</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6 mb-3 mb-xl-0">
+					<div class="team__item shd">
+						<div class="team__item-img" style="background-image: url(img/team__img_3.jpg)"></div>
+						<div class="team__item-info">
+							<div class="team__item-ttl">Наливкин Евгений Семенович</div>
+							<div class="team__item-pos">Програмист</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6 mb-3 mb-xl-0">
+					<div class="team__item shd">
+						<div class="team__item-img" style="background-image: url(img/team__img_4.jpg)"></div>
+						<div class="team__item-info">
+							<div class="team__item-ttl">Огурцов Сергей Васильевич</div>
+							<div class="team__item-pos">Програмист</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="prj section_inner">
+		<div class="container">
+			<div class="section__ttl">Реализованные проекты</div>
+			<div class="row no-gutters">
+				<div class="col-xl-6">
+					<div class="prj__left">
+						<!--item-->
+						<div class="prj__left-item active" data-prj="1">
+							<div class="prj__left-decor">
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+							</div>
+							<div class="prj__left-in">
+								<div>1 Оптимизация системы корпоративной электронной почты и внедрение Symantec Enterprise Vault для ОАО «Сибур Холдинг».</div>
+								<div><span class="b">ЗАДАЧА</span> Повышение удобства пользования корпоративной электронной почтой, возможность быстрого доступа к архивам за прошлые периоды, обеспечение бесперебойной работы корпоративной почты, исключение рисков потери и искажения данных.</div>
+								<div><span class="b">РЕШЕНИЕ</span> В рамках проекта было реализовано комплексное решение Symantec Enterprise Vault, предназначенное для архивирования сообщений, а также для архивирования файловых серверов.</div>
+								<div><span class="b">РЕЗУЛЬТАТ</span> Оптимизация корпоративной почтовой системы обеспечила: Централизованное хранение все возрастающих объемов электронной почты с автоматическим архивированием по заданным правилам, определяемым корпоративной политикой, что позволило пользователям использовать почтовый ящик практически неограниченного размера при сохранении контроля над ростом ресурсов.</div>
+								<div class="d-flex justify-content-between mt-3">
+									<a href="#" class="und">Компания</a> <div>29.04.2019 г</div>
+								</div>
+							</div>
+						</div>
+						<!--/item-->
+						<!--item-->
+						<div class="prj__left-item" data-prj="2">
+							<div class="prj__left-decor">
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+							</div>
+							<div class="prj__left-in">
+								<div>2 Оптимизация системы корпоративной электронной почты и внедрение Symantec Enterprise Vault для ОАО «Сибур Холдинг».</div>
+								<div><span class="b">ЗАДАЧА</span> Повышение удобства пользования корпоративной электронной почтой, возможность быстрого доступа к архивам за прошлые периоды, обеспечение бесперебойной работы корпоративной почты, исключение рисков потери и искажения данных.</div>
+								<div><span class="b">РЕШЕНИЕ</span> В рамках проекта было реализовано комплексное решение Symantec Enterprise Vault, предназначенное для архивирования сообщений, а также для архивирования файловых серверов.</div>
+								<div class="d-flex justify-content-between mt-3">
+									<a href="#" class="und">Компания</a> <div>29.04.2019 г</div>
+								</div>
+							</div>
+						</div>
+						<!--/item-->
+						<!--item-->
+						<div class="prj__left-item" data-prj="3">
+							<div class="prj__left-decor">
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+							</div>
+							<div class="prj__left-in">
+								<div>3 Оптимизация системы корпоративной электронной почты и внедрение Symantec Enterprise Vault для ОАО «Сибур Холдинг».</div>
+								<div><span class="b">ЗАДАЧА</span> Повышение удобства пользования корпоративной электронной почтой, возможность быстрого доступа к архивам за прошлые периоды, обеспечение бесперебойной работы корпоративной почты, исключение рисков потери и искажения данных.</div>
+								<div class="d-flex justify-content-between mt-3">
+									<a href="#" class="und">Компания</a> <div>29.04.2019 г</div>
+								</div>
+							</div>
+						</div>
+						<!--/item-->
+						<!--item-->
+						<div class="prj__left-item" data-prj="4">
+							<div class="prj__left-decor">
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+							</div>
+							<div class="prj__left-in">
+								<div>4 Оптимизация системы корпоративной электронной почты и внедрение Symantec Enterprise Vault для ОАО «Сибур Холдинг».</div>
+								<div><span class="b">ЗАДАЧА</span> Повышение удобства пользования корпоративной электронной почтой, возможность быстрого доступа к архивам за прошлые периоды, обеспечение бесперебойной работы корпоративной почты, исключение рисков потери и искажения данных.</div>
+								<div><span class="b">РЕЗУЛЬТАТ</span> Оптимизация корпоративной почтовой системы обеспечила: Централизованное хранение все возрастающих объемов электронной почты с автоматическим архивированием по заданным правилам, определяемым корпоративной политикой, что позволило пользователям использовать почтовый ящик практически неограниченного размера при сохранении контроля над ростом ресурсов.</div>
+								<div class="d-flex justify-content-between mt-3">
+									<a href="#" class="und">Компания</a> <div>29.04.2019 г</div>
+								</div>
+							</div>
+						</div>
+						<!--/item-->
+						<!--item-->
+						<div class="prj__left-item" data-prj="5">
+							<div class="prj__left-decor">
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+							</div>
+							<div class="prj__left-in">
+								<div>4 Оптимизация системы корпоративной электронной почты и внедрение Symantec Enterprise Vault для ОАО «Сибур Холдинг».</div>
+								<div><span class="b">ЗАДАЧА</span> Повышение удобства пользования корпоративной электронной почтой, возможность быстрого доступа к архивам за прошлые периоды, обеспечение бесперебойной работы корпоративной почты, исключение рисков потери и искажения данных.</div>
+								<div><span class="b">РЕШЕНИЕ</span> В рамках проекта было реализовано комплексное решение Symantec Enterprise Vault, предназначенное для архивирования сообщений, а также для архивирования файловых серверов.</div>
+								<div><span class="b">РЕЗУЛЬТАТ</span> Оптимизация корпоративной почтовой системы обеспечила: Централизованное хранение все возрастающих объемов электронной почты с автоматическим архивированием по заданным правилам, определяемым корпоративной политикой, что позволило пользователям использовать почтовый ящик практически неограниченного размера при сохранении контроля над ростом ресурсов.</div>
+								<div class="d-flex justify-content-between mt-3">
+									<a href="#" class="und">Компания</a> <div>29.04.2019 г</div>
+								</div>
+							</div>
+						</div>
+						<!--/item-->
+						<!--item-->
+						<div class="prj__left-item" data-prj="6">
+							<div class="prj__left-decor">
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+							</div>
+							<div class="prj__left-in">
+								<div>6 Оптимизация системы корпоративной электронной почты и внедрение Symantec Enterprise Vault для ОАО «Сибур Холдинг».</div>
+								<div><span class="b">РЕЗУЛЬТАТ</span> Оптимизация корпоративной почтовой системы обеспечила: Централизованное хранение все возрастающих объемов электронной почты с автоматическим архивированием по заданным правилам, определяемым корпоративной политикой, что позволило пользователям использовать почтовый ящик практически неограниченного размера при сохранении контроля над ростом ресурсов.</div>
+								<div class="d-flex justify-content-between mt-3">
+									<a href="#" class="und">Компания</a> <div>29.04.2019 г</div>
+								</div>
+							</div>
+						</div>
+						<!--/item-->
+						<!--item-->
+						<div class="prj__left-item" data-prj="7">
+							<div class="prj__left-decor">
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+							</div>
+							<div class="prj__left-in">
+								<div>7 Оптимизация системы корпоративной электронной почты и внедрение Symantec Enterprise Vault для ОАО «Сибур Холдинг».</div>
+								<div><span class="b">РЕЗУЛЬТАТ</span> Оптимизация корпоративной почтовой системы обеспечила: Централизованное хранение все возрастающих объемов электронной почты с автоматическим архивированием по заданным правилам, определяемым корпоративной политикой, что позволило пользователям использовать почтовый ящик практически неограниченного размера при сохранении контроля над ростом ресурсов.</div>
+								<div class="d-flex justify-content-between mt-3">
+									<a href="#" class="und">Компания</a> <div>29.04.2019 г</div>
+								</div>
+							</div>
+						</div>
+						<!--/item-->
+						<!--item-->
+						<div class="prj__left-item" data-prj="8">
+							<div class="prj__left-decor">
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+								<div class="prj__left-decor-item"></div>
+							</div>
+							<div class="prj__left-in">
+								<div>8 Оптимизация системы корпоративной электронной почты и внедрение Symantec Enterprise Vault для ОАО «Сибур Холдинг».</div>
+								<div><span class="b">ЗАДАЧА</span> Повышение удобства пользования корпоративной электронной почтой, возможность быстрого доступа к архивам за прошлые периоды, обеспечение бесперебойной работы корпоративной почты, исключение рисков потери и искажения данных.</div>
+								<div><span class="b">РЕШЕНИЕ</span> В рамках проекта было реализовано комплексное решение Symantec Enterprise Vault, предназначенное для архивирования сообщений, а также для архивирования файловых серверов.</div>
+								<div class="d-flex justify-content-between mt-3">
+									<a href="#" class="und">Компания</a> <div>29.04.2019 г</div>
+								</div>
+							</div>
+						</div>
+						<!--/item-->
+					</div>
+				</div>
+				<div class="col-xl-6">
+					<div class="prj__right owl-carousel">
+						<!--col-->
+						<div class="prj__right-col">
+							<!--item-->
+							<div class="prj__right-item" data-prj="1">
+								<div class="prj__right-item-ttl">Компания</div>
+								<div class="prj__right-item-ttl">Город</div>
+								<a href="#" class="und mt-3">www.адрессайта.ru</a>
+							</div>
+							<!--/item-->
+							<!--item-->
+							<div class="prj__right-item" data-prj="2">
+								<div class="prj__right-item-ttl">Компания</div>
+								<div class="prj__right-item-ttl">Город</div>
+								<a href="#" class="und mt-3">www.адрессайта.ru</a>
+							</div>
+							<!--/item-->
+						</div>
+						<!--/col-->
+						<!--col-->
+						<div class="prj__right-col">
+							<!--item-->
+							<div class="prj__right-item" data-prj="3">
+								<div class="prj__right-item-ttl">Компания</div>
+								<div class="prj__right-item-ttl">Город</div>
+								<a href="#" class="und mt-3">www.адрессайта.ru</a>
+							</div>
+							<!--/item-->
+							<!--item-->
+							<div class="prj__right-item" data-prj="4">
+								<div class="prj__right-item-ttl">Компания</div>
+								<div class="prj__right-item-ttl">Город</div>
+								<a href="#" class="und mt-3">www.адрессайта.ru</a>
+							</div>
+							<!--/item-->
+						</div>
+						<!--/col-->
+						<!--col-->
+						<div class="prj__right-col">
+							<!--item-->
+							<div class="prj__right-item" data-prj="5">
+								<div class="prj__right-item-ttl">Компания</div>
+								<div class="prj__right-item-ttl">Город</div>
+								<a href="#" class="und mt-3">www.адрессайта.ru</a>
+							</div>
+							<!--/item-->
+							<!--item-->
+							<div class="prj__right-item" data-prj="6">
+								<div class="prj__right-item-ttl">Компания</div>
+								<div class="prj__right-item-ttl">Город</div>
+								<a href="#" class="und mt-3">www.адрессайта.ru</a>
+							</div>
+							<!--/item-->
+						</div>
+						<!--/col-->
+						<!--col-->
+						<div class="prj__right-col">
+							<!--item-->
+							<div class="prj__right-item" data-prj="7">
+								<div class="prj__right-item-ttl">Компания</div>
+								<div class="prj__right-item-ttl">Город</div>
+								<a href="#" class="und mt-3">www.адрессайта.ru</a>
+							</div>
+							<!--/item-->
+							<!--item-->
+							<div class="prj__right-item" data-prj="8">
+								<div class="prj__right-item-ttl">Компания</div>
+								<div class="prj__right-item-ttl">Город</div>
+								<a href="#" class="und mt-3">www.адрессайта.ru</a>
+							</div>
+							<!--/item-->
+						</div>
+						<!--/col-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section_inner map">
+		<div class="map__in" style="background: url(img/map__bg.jpg) no-repeat 50% 50% / cover"></div>
+		<div class="container">
+			<form action="" class="map__form">
+				<div class="map__form-ttl">Обсудить проект</div>
+				<input type="text" placeholder="Фамилия Имя Отчество*" required="" class="mb-3 map__form-input">
+				<input type="email" placeholder="Ваш email*" required="" class="mb-3 map__form-input">
+				<input type="tel" placeholder="Ваш телефон*" required="" class="mb-3 map__form-input">
+				<textarea cols="30" rows="4" placeholder="Ваше сообщение*" class="mb-3 map__form-input"></textarea>
+				<label for="map__checkbox" class="checkbox mb-3">
+					<input type="checkbox" id="map__checkbox" required="">
+					<span class="checkbox__text">Я согласен на обработку <a href="#">персональных данных</a></span>
+				</label>
+				<input type="submit" value="Отправить" class="btn">
+			</form>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row mb-3">
+				<div class="col-xl-4 col-sm-6 mb-4">
+					<div class="footer__ttl footer__ttl_mobile mb-3">Обсудить проект</div>
+					<div class="d-flex flex-column flex-xl-row justify-content-between">
+						<div class="d-flex flex-column">
+							<a href="#" class="footer__link mb-1">Решения и продукты</a>
+							<a href="#" class="footer__link mb-1">Услуги</a>
+							<a href="#" class="footer__link mb-1">О компании</a>
+							<a href="#" class="footer__link mb-1">Реализованнные проекты</a>
+							<a href="#" class="footer__link mb-1">Партнеры</a>
+						</div>
+						<div class="d-flex flex-column">
+							<a href="#" class="footer__link mb-1">Вакансии</a>
+							<a href="#" class="footer__link mb-1">Компетенции</a>
+							<a href="#" class="footer__link mb-1">Контакты</a>
+							<a href="#" class="footer__link mb-1">Новости</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6 col-sm-6 mb-4">
+					<div class="footer__ttl footer__ttl_mobile mb-3">Популярные ссылки</div>
+					<div class="d-flex flex-column flex-xl-row justify-content-between">
+						<div class="d-flex flex-column">
+							<a href="#" class="footer__link mb-1">Решения обработки и хранения данных</a>
+							<a href="#" class="footer__link mb-1">Оптимизация печати</a>
+							<a href="#" class="footer__link mb-1">Решения для визуализации</a>
+							<a href="#" class="footer__link mb-1">Корпоративный портал</a>
+							<a href="#" class="footer__link mb-1">Системы управления производством</a>
+						</div>
+						<div class="d-flex flex-column">
+							<a href="#" class="footer__link mb-1">Информационная безопасность</a>
+							<a href="#" class="footer__link mb-1">Сетевая инфраструктура</a>
+							<a href="#" class="footer__link mb-1">ИТ аутсорсинг</a>
+							<a href="#" class="footer__link mb-1">ИТ консалтинг</a>
+							<a href="#" class="footer__link mb-1">Сервисное обслуживание</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-2 mb-4">
+					<div class="footer__ttl mb-3">Соцсети</div>
+					<div class="d-flex flex-column">
+						<div class="d-flex justify-content-center justify-content-xl-between footer__soc mb-3 mb-xl-4">
+							<a href="#" target="_blank" class="footer__soc-item mr-3 mr-xl-0"><img src="img/icon__fb.png" alt=""></a>
+							<a href="#" target="_blank" class="footer__soc-item mr-3 mr-xl-0"><img src="img/icon__vk.png" alt=""></a>
+							<a href="#" target="_blank" class="footer__soc-item mr-3 mr-xl-0"><img src="img/icon__in.png" alt=""></a>
+							<a href="#" target="_blank" class="footer__soc-item"><img src="img/icon__yt.png" alt=""></a>
+						</div>
+						<a href="#popup_call" data-fancybox class="btn">Оставить заявку</a>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex flex-xl-row flex-column align-items-center align-items-xl-end justify-content-between">
+				<div class="d-flex align-items-end mb-3 mb-xl-0">
+					<a href="#" class="footer__logo mr-4">
+						<img src="img/footer__logo.png" alt="footer__logo.png">
+					</a>
+					<div class="footer__copy">© 2019<br>ООО "Джи-Эс-Ти</div>
+				</div>
+				<div class="d-flex align-items-center footer__tel mr-xl-4 mb-3 mb-xl-0">
+					<img src="img/icon__geo_white.png" alt="icon__geo_white.png" class="mr-2" style="width:15px">
+					<span>Самара, ул. Чапаевская, д. 112А</span>
+				</div>
+				<div class="d-flex flex-column flex-sm-row align-items-center mb-3 mb-xl-0">
+					<a href="tel:78463406191" class="d-flex align-items-center footer__tel mr-sm-4 mb-3 mb-sm-0">
+						<img src="img/icon__tel.png" alt="icon__tel.png" class="mr-2">
+						<span>+7 846 340-61-91</span>
+					</a>
+					<a href="tel:78463405880" class="d-flex align-items-center footer__tel">
+						<img src="img/icon__tel.png" alt="icon__tel.png" class="mr-2 d-block d-sm-none">
+						<span>+7 846 340-58-80</span>
+					</a>
+				</div>
+				<a href="mailto:sales@gst-samara.ru" class="d-flex align-items-center footer__tel mb-3 mb-xl-0">
+					<img src="img/icon__mes_white.png" alt="icon__mes_white.png" class="mr-2">
+					<span>sales@gst-samara.ru</span>
+				</a>
+			</div>
+		</div>
+	</footer>
+	<div id="popup_call" class="popup__container" style="display:none">
+		<div  class="popup__wrp popup_call__wrp">
+			<form action="[[~[[*id]]]]" method="post" class="popup">
+				<div class="popup__ttl">Оставьте заявку</div>
+				<div class="input__wrp input__wrp_name">
+					<input type="text" class="form__input" name="popup_call__name" placeholder="Ваше имя" required="">
+				</div>
+				<div class="input__wrp input__wrp_tel">
+					<input type="tel" class="form__input" name="popup_call__tel" placeholder="Телефон" required="">
+				</div>
+				<div class="input__wrp input__wrp_mail">
+					<input type="email" class="form__input" name="popup_call__email" placeholder="E-mail">
+				</div>
+				<input type="submit" class="btn" name="popup_call__sumbit" value="Заказать">
+				<div class="popup__policy">
+					Нажимая кнопку "Отправить", вы соглашаетесь с <a href="#" class="form__policy-link">политикой конфиденциальности</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="js/libs.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
