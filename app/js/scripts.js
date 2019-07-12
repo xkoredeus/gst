@@ -93,7 +93,49 @@ $(function() {
       }
     },
   });
-
+  //history slider
+  $(document).ready(function() {
+    var owl = $(".history__slider-bot"),
+      // rangeArr = [],
+      inputType =$("input[type=range]");
+      owl.owlCarousel({
+        // 'loop': true,
+        mouseDrag: false,
+        dots: false,
+        startPosition: 5,
+        center: true,
+        responsive: {
+          0: {
+            items: 2,
+            slideBy: 1,
+           
+          },
+          600: {
+            items: 3,
+            slideBy: 1
+            
+          },
+          1280: {
+            items: 5,
+            slideBy: 1
+          }
+        }
+      });
+      owl.on('changed.owl.carousel', function(event) {
+        console.log(event.item.index);
+        inputType.val(event.item.index);
+      });
+      $("input").on("change", function(e) {
+        e.preventDefault();
+        console.log(inputType.val());
+      $('.owl-carousel').trigger('to.owl.carousel', [inputType.val(),1,true]);
+      $('.history__slider-info-item').hide();
+      var his = $('.owl-carousel .center .history__slider-item').attr('data-his');
+      $('.history__slider-info-item[data-his="'+his+'"]').fadeIn();
+    });
+  });
+  $('.history__slider-info-item').hide();
+  $('.history__slider-info-item[data-his="6"]').fadeIn();
   //main-nav
   $('.header__nav-sub').hide();
   $('.header__nav-sub_2').hide();
