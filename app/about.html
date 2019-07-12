@@ -662,21 +662,40 @@
 			</div>
 		</div>
 	</section>
-	<section class="section_inner map">
-		<div class="map__in" style="background: url(img/map__bg.jpg) no-repeat 50% 50% / cover"></div>
+	<section class="map">
 		<div class="container">
-			<form action="" class="map__form">
-				<div class="map__form-ttl">Обсудить проект</div>
-				<input type="text" placeholder="Фамилия Имя Отчество*" required="" class="mb-3 map__form-input">
-				<input type="email" placeholder="Ваш email*" required="" class="mb-3 map__form-input">
-				<input type="tel" placeholder="Ваш телефон*" required="" class="mb-3 map__form-input">
-				<textarea cols="30" rows="4" placeholder="Ваше сообщение*" class="mb-3 map__form-input"></textarea>
-				<label for="map__checkbox" class="checkbox mb-3">
-					<input type="checkbox" id="map__checkbox" required="">
-					<span class="checkbox__text">Я согласен на обработку <a href="#">персональных данных</a></span>
-				</label>
-				<input type="submit" value="Отправить" class="btn">
-			</form>
+			<div class="row no-gutters">
+				<div class="col-xl-6 mb-3 mb-xl-0">
+					<form action="" class="map__form section_inner">
+						<div class="section__ttl">Хотите проконсультироваться?</div>
+						<p>Оставьте ваши контакты, мы свяжемся с вами</p>
+						<input type="text" placeholder="Фамилия Имя Отчество*" required="" class="mb-3 map__form-input">
+						<input type="email" placeholder="Ваш email*" required="" class="mb-3 map__form-input">
+						<input type="tel" placeholder="Ваш телефон*" required="" class="mb-3 map__form-input">
+						<textarea cols="30" rows="4" placeholder="Ваше сообщение*" class="mb-3 map__form-input"></textarea>
+						<label for="map__checkbox" class="checkbox mb-3">
+							<input type="checkbox" id="map__checkbox" required="">
+							<span class="checkbox__text">Я согласен на обработку <a href="#">персональных данных</a></span>
+						</label>
+						<input type="submit" value="Отправить" class="btn">
+					</form>
+				</div>
+				<div class="pl-2 pl-xl-0 col-xl-6">
+					<div class="map__in tabs">
+						<ul class="tabs__list">
+							<li class="active">Наш офис по адресу: ул. Чапаевская, д. 112А</li>
+							<li>Наш офис по адресу: ул. Врубеля, д. 17</li>
+						</ul>
+						<div class="tabs__container">
+							<div class="tabs__content-item active-tab">
+								<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af9c56983eb915b104418fa8c92ea8a6eee6867bde005f5805db432d9c3f535f2&amp;source=constructor" width="100%" height="600" frameborder="0"></iframe>
+							</div>
+							<div class="tabs__content-item">
+								<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2859d80dfce2963d77a5578a77d8e145f3f274b2bf1b9e3c15f0e88b162f4712&amp;source=constructor" width="100%" height="600" frameborder="0"></iframe>
+							</div>
+						</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<footer class="footer">

@@ -125,6 +125,12 @@
     height: auto !important;
     padding: 15px;
   }
+  .map__in {
+    padding-bottom: 15px;
+  }
+  .map__in iframe {
+    height: 400px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -134,7 +140,8 @@
     font-size: 23px;
   }
   .news__item-ttl,
-  .section__subttl {
+  .section__subttl,
+  .map .section__ttl {
     font-size: 20px !important;
   }
   .header__nav-link {
@@ -241,6 +248,9 @@
     max-width: 370px;
   }
   .news-page__more-item-img {
+    margin-bottom: 15px;
+  }
+  .clients .clients__item {
     margin-bottom: 15px;
   }
 }

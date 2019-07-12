@@ -794,6 +794,9 @@ textarea:active {
       -ms-transform: translateY(25px);
           transform: translateY(25px);
   opacity: 0;
+  -webkit-transition: .05s all ease;
+  -o-transition: .05s all ease;
+  transition: .05s all ease;
 }
 
 .header__nav-link-wrp {
@@ -2103,36 +2106,91 @@ main {
 
 .map {
   position: relative;
+  background-color: #F9F9F9;
 }
 
 .map .container {
   position: relative;
 }
 
-.map__in {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
+.map .section__ttl {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.map__tel {
+  font-size: 22px;
+  font-family: "Ubuntu-Bold";
+  text-transform: uppercase;
+}
+
+.map__ttl {
+  font-size: 18px;
+  font-family: "Ubuntu-Bold";
+  text-transform: uppercase;
+  margin-bottom: 4px;
 }
 
 .map__form {
-  width: 370px;
-  left: 0%;
-  top: 20px;
-  padding: 30px;
-  background-color: #fff;
-}
-
-.map__form-ttl {
-  font-family: "Ubuntu-Bold";
-  font-size: 28px;
-  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 460px;
 }
 
 .map__form-input {
   width: 100%;
+}
+
+.map__in {
+  position: relative;
+}
+
+.map__in .tabs__list {
+  position: absolute;
+  left: 10px;
+  top: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+}
+
+.map__in .tabs__list li {
+  font-size: 12px;
+  text-align: center;
+  background-color: #fff;
+  padding: 15px 10px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.map__in .tabs__list li:hover:not(.active) {
+  -webkit-transform: translateY(5px);
+      -ms-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.map__in .tabs__list li.active {
+  color: #fff;
+  background-color: #7C72AA;
+}
+
+.map__in .tabs__list li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer {
@@ -2800,4 +2858,110 @@ main {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
+}
+
+.rev {
+  border-radius: 5px;
+}
+
+.rev__item {
+  background-color: #fff;
+  margin-bottom: 30px;
+  padding: 25px;
+}
+
+.rev__item-img {
+  width: 100%;
+  max-width: 250px;
+  height: 350px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.rev__item-img::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #4A34AE;
+  opacity: 0;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.rev__item-img-more {
+  width: 83px;
+  height: 83px;
+  background: url("../img/icon__more.png") no-repeat 50% 50%/contain;
+  opacity: 0;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.rev__item-img span {
+  position: relative;
+}
+
+.rev__item-img:hover::before {
+  opacity: .7;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.rev__item-img:hover .rev__item-img-more {
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.rev__item-ttl {
+  font-family: "Ubuntu-Bold";
+  font-size: 20px;
+}
+
+.rev__item-file {
+  color: #26166F;
+}
+
+.rev__item-file:hover {
+  -webkit-transform: translateX(5px);
+      -ms-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
+.rev__item-name {
+  font-size: 18px;
+}
+
+.rev__item-link {
+  color: #26166F;
+  display: block;
+}
+
+.rev__item-link:hover {
+  -webkit-transform: translateX(5px);
+      -ms-transform: translateX(5px);
+          transform: translateX(5px);
 }
