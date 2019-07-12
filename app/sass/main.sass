@@ -1681,3 +1681,82 @@ main
 						background-color: $blue
 			span
 				position: relative
+.comp
+	&__item
+		max-width: 190px
+		width: 100%
+		margin: 0px 15px 30px
+		text-align: center
+		display: flex
+		flex-direction: column
+		align-items: center
+		&-top
+			width: 130px
+			height: 130px
+			background-color: #fff
+			border-radius: 5px
+			margin-bottom: 15px
+			display: flex
+			justify-content: center
+			align-items: center
+		&-img
+			width: 70px
+			height: 70px
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			background-size: contain
+		&-ttl
+			font-size: 16px
+		&:hover
+			transform: translateY(-3px)
+			.sol__item-top
+				background-color: $yel
+.str
+	color: #fff
+	background: url('../img/str__bg.jpg') no-repeat 50% 0% / cover
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		right: 0
+		top: 0
+		background: linear-gradient(106.09deg, #36275c 0.94%, #8777ce91 100%)
+		// opacity: .8
+	.container
+		position: relative
+	&__item
+		text-align: center
+		max-width: 220px
+		margin-left: auto
+		margin-right: auto
+		&-perc
+			font-family: $ubold
+			font-size: 40px
+			padding: 20px 15px 30px
+			position: relative
+			overflow: hidden
+			&::before,
+			&::after
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				left: 0
+				top: 0
+			&::before
+				background: linear-gradient(180deg, #FFFFFF -41.45%, #26166F -41.44%, rgba(38, 22, 111, 0) 94.02%)
+			&::after
+				opacity: 0
+				transform: translateY(-140px)
+				transition: .6s all ease
+				background: linear-gradient(180deg, #FA712D -41.45%, rgba(250, 113, 45, 0) 94.02%)
+			span
+				position: relative
+				z-index: 1
+		&:hover
+			.str__item-perc
+				&::after
+					opacity: 1
+					transform: translateY(0)
