@@ -1,12 +1,13 @@
 $(function() {
   $('.header__banner').owlCarousel({
-      nav: false,
-      items: 1,
-      loop: false,
-      dots: true,
-      smartSpeed: 700,
-      navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"],
+    nav: false,
+    items: 1,
+    loop: false,
+    dots: true,
+    smartSpeed: 700,
+    navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"],
 	});
+  $('.header__banner_sol').owlCarousel('destroy');
   $('.clients__in').owlCarousel({
     nav: true,
     loop: true,
@@ -42,6 +43,25 @@ $(function() {
           items: 1,
       },
       380 : {
+          items: 1,
+      },
+      480 : {
+          items: 2,
+      },
+      768 : {
+          items: 3,
+      }
+    },
+  });
+  $('.sol-begin__slider').owlCarousel({
+    nav: false,
+    loop: false,
+    smartSpeed: 700,
+    dots: true,
+    margin: 20,
+    navText: ["<img src='img/prj-slider__arrow_prev.png'>", "<img src='img/prj-slider__arrow_next.png'>"],
+    responsive : {
+      0   : {
           items: 1,
       },
       480 : {
@@ -92,6 +112,11 @@ $(function() {
           items: 2
       }
     },
+  });
+  //accordeon
+  $('.sol-acc__item-cnt').hide();
+  $('.sol-acc__item-btn').on('click', function () {
+    $(this).toggleClass('active').siblings('.sol-acc__item-cnt').slideToggle();
   });
   //history slider
   $(document).ready(function() {
@@ -175,8 +200,19 @@ $(function() {
       $(this).toggleClass('active').siblings().find('.footer__link').slideToggle();
     });
   };
-  //Закрываем AjaxForm popup после успешной отправки
-  // $(document).on('af_complete', function(event,res) {
-  //   if(res.success) parent.$.fancybox.close();
-  // });
+  //sidebar
+  if ( $(window).width() < 1199 ) {
+    $(function(){
+     var topPos = $('.sidebar').offset().top; //topPos - это значение от верха блока до окна браузера
+     $(window).scroll(function() { 
+      var top = $(document).scrollTop();
+      if (top > topPos) $('.sidebar').addClass('sticky'); 
+      else $('.sidebar').removeClass('sticky');
+     });
+    });
+    $('.sidebar__link').hide();
+    $('.sidebar__ttl').on('click', function(){
+      $(this).toggleClass('active').siblings('.sidebar__in').find('.sidebar__link').slideToggle();
+    });
+  };
 });

@@ -165,6 +165,8 @@ textarea:active
 	input[type="checkbox"]:checked + .checkbox__text:before,
 	input[type="radio"]:checked + .checkbox__text:before
 		background-color: #fff
+.w100
+	width: 100%
 .und
 	text-decoration: underline
 .tac
@@ -600,6 +602,68 @@ textarea:active
 			width: 1140px
 			left: 50%
 			margin-left: calc(-1110px/2)
+		&_sol
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100px
+				bottom: 0
+				left: 0
+				background-color: #fff
+			.container
+				position: relative
+			.header__banner-item
+				opacity: 1
+.sidebar
+	background-color: #fff
+	border-radius: 4px
+	padding-top: 20px
+	padding-bottom: 20px
+	position: sticky
+	left: 0
+	top: 20px
+	&__ttl
+		padding: 8px
+		font-family: $ubold
+		background-color: $yel
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			width: 10px
+			height: 10px
+			left: 10px
+			top: 50%
+			transform: translate(0, -50%) rotate(90deg)
+			background: url('../img/slider__arrow_next-black.png') no-repeat 50% 50% / contain
+		&.active
+			&::after
+				transform: translate(0, -50%) rotate(-90deg)
+	&__in
+		display: flex
+		flex-direction: column
+	&__link
+		font-size: 15px
+		position: relative
+		padding: 8px 20px 8px 7px
+		&::after
+			content: ''
+			position: absolute
+			width: 10px
+			height: 10px
+			right: 10px
+			top: 50%
+			transform: translate(0, -50%)
+			background: url('../img/slider__arrow_next-black.png') no-repeat 50% 50% / contain
+		&_here
+			background-color: #C9C2DF
+		&:hover
+			&:not(.sidebar__link_here)
+				background-color: #fcde5a
+				&::after
+					right: 8px
 .sol
 	background: url('../img/sol__bg.jpg') no-repeat 50% 50% / cover
 	position: relative
@@ -714,6 +778,217 @@ textarea:active
 					&::before
 						transform: translateX(0)
 						opacity: 1
+	&-begin
+		background-color: #EFEFF1
+		position: relative
+		&__item
+			width: 100%
+			max-width: 370px
+			min-height: 435px
+			height: 100%
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 30px
+			position: relative
+			overflow: hidden
+			border-radius: 5px
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: 50% 50%
+			&::after
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				left: 0
+				top: 0
+				background-color: $dpurp
+				opacity: 0
+			&::before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				left: 0
+				top: 0
+				background-color: #F3F3F3
+				opacity: .7
+			&-in
+				height: 100%
+				position: relative
+				z-index: 1
+				padding: 20px 15px
+				transform: translateY(320px)
+				transition: .6s all ease-in-out
+			&-ttl
+				font-family: $ubold
+				font-size: 18px
+				margin-bottom: 10px
+			p
+				font-size: 16px
+				opacity: 0
+			&:hover
+				.sol-begin__item-in
+					transform: translateY(0)
+				p
+					color: #fff
+					opacity: 1
+				.sol-begin__item-ttl
+					color: #fff
+				&::before
+					opacity: 0
+				&::after
+					opacity: .8
+	&-acc
+		&__item
+			margin-bottom: 15px
+			background-color: #fff
+			border-radius: 4px
+			&-btn
+				font-size: 20px
+				position: relative
+				padding: 15px 25px
+				cursor: pointer
+				&::before,
+				&::after
+					content: ''
+					position: absolute
+					width: 15px
+					height: 2px
+					background-color: #000
+				&::before
+					right: 20px
+					top: 25px
+				&::after
+					right: 20px
+					top: 25px
+					transform: rotate(90deg)
+				&.active
+					&::after
+						opacity: 0
+			&-cnt
+				color: #969696
+				padding: 0px 25px 15px
+				transition: unset
+	&-offer
+		background-color: #FEF4D3
+		&__item
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			text-align: center
+			padding: 30px 20px
+			min-height: 205px
+			height: 100%
+			max-width: 370px
+			margin-left: auto
+			margin-right: auto
+			border-radius: 3px
+			overflow: hidden
+			position: relative
+			background-color: #fff
+			&>*
+				position: relative
+				z-index: 1
+			&::before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				left: 0
+				top: 0
+				background-position: 50% 50%
+				background-size: cover
+				background-repeat: no-repeat
+				opacity: 0
+				border-radius: 3px
+				background-color: $yel
+				transition: .5s all ease
+			&-ttl
+				font-size: 18px
+				font-family: $ubold
+				position: relative
+				margin-bottom: 20px
+			&-img
+				position: absolute
+				left: 0
+				top: 0
+				height: 100%
+				width: 100%
+				background-position: 50% 50%
+				background-size: contain
+				background-repeat: no-repeat
+				&_2
+					opacity: 0
+				&-wrp
+					width: 100%
+					height: 75px
+					margin-bottom: 20px
+					position: relative
+			&:hover
+				.sol-offer__item
+					&-ttl
+						// color: #fff
+					&-img
+						&_1
+							opacity: 0
+						&_2
+							opacity: 1
+				&::before
+					opacity: .9
+	&-work
+		background-color: #E5E5E5
+		&__item
+			font-family: $ubold
+			font-size: 16px
+			width: 100%
+			height: 100%
+			max-width: 270px
+			min-height: 270px
+			margin-left: auto
+			margin-right: auto
+			border-radius: 4px
+			background-color: #c9c2df66
+			display: flex
+			flex-direction: column
+			// justify-content: center
+			padding: 100px 25px 25px
+			position: relative
+			&-num
+				font-size: 80px
+				color: $blue
+				position: absolute
+				left: -20px
+				top: 20px
+				span
+					position: relative
+					display: block
+					&::after
+						content: ''
+						position: absolute
+						width: 140px
+						height: 20px
+						left: 100px
+						top: 50%
+						transform: translate(0, -50%)
+						transition: .5s all ease-in-out
+						background: url('../img/sol-work__arr.png') no-repeat 50% 50% / cover
+			p
+				margin-top: 30px
+			&:hover
+				.sol-work__item-num
+					transform: translateX(10px)
+					span
+						&::after
+							left: 110px
+		&__list
+			&>div
+				&:last-child
+					.sol-work__item-num
+						span
+							&::after
+								background: url('../img/sol-work__arr_1.png') no-repeat 50% 50% / contain
 .out
 	color: #fff
 	background: url('../img/out__bg.jpg') no-repeat 50% 50% / cover
@@ -1221,6 +1496,66 @@ main
 				font-size: 24px
 			&:hover
 				transform: scale(.94)
+	&-page
+		background-color: #FEF4D3
+		background-image: none
+		&__in
+			background-color: #fff
+			border-radius: 4px
+			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
+			padding: 30px
+			position: relative
+			overflow: hidden
+			&::after
+				content: ''
+				clear: both
+		&__ttl
+			font-size: 20px
+			margin-bottom: 15px
+			margin-top: 20px
+		&__info
+			width: 100%
+			max-width: 440px
+			margin-left: auto
+			margin-right: auto
+			padding: 20px 15px
+			background-color: #F0F0F0
+			border-radius: 4px
+			&-img
+				width: 100%
+				max-width: 270px
+				height: 130px
+				background-position: 50% 50%
+				background-repeat: no-repeat
+				background-size: contain
+			&-date
+				opacity: .7
+			&-ttl
+				font-size: 20px
+				margin-bottom: 15px
+		&__more
+			&-item
+				display: flex
+				flex-direction: column
+				max-width: 570px
+				margin-left: auto
+				margin-right: auto
+				border-radius: 4px
+				overflow: hidden
+				background-color: #fff
+				padding: 20px
+				&-ttl
+					font-size: 20px
+				&-bot
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: flex-start
+				&-link,
+				&-top
+					&:hover
+						color: $blue
+						transform: translateX(5px)
 .news
 	&__item
 		max-width: 570px
@@ -1253,7 +1588,7 @@ main
 				padding-right: 20px
 				padding-bottom: 30px
 			&-date
-				filter: grayscale(80%)
+				opacity: .7
 			&-ttl
 				font-size: 20px
 	&-page

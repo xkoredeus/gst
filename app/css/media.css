@@ -131,6 +131,32 @@
   .map__in iframe {
     height: 400px;
   }
+  .sidebar {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    max-width: 370px;
+    z-index: 5;
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  }
+  .sidebar__link {
+    -webkit-transition: unset;
+    -o-transition: unset;
+    transition: unset;
+  }
+  .sidebar__link::after {
+    display: none;
+  }
+  .sidebar.sticky {
+    position: fixed;
+    right: -3px;
+    left: auto;
+    top: 10px;
+  }
+  .sol-acc__item-btn {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -252,6 +278,23 @@
   }
   .clients .clients__item {
     margin-bottom: 15px;
+  }
+  .sol-work__item {
+    min-height: auto;
+    padding-top: 25px;
+    text-align: center;
+  }
+  .sol-work__item-num {
+    font-size: 40px;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  .sol-work__item-num span::after {
+    display: none;
+  }
+  .sol-work__item p {
+    margin-top: 10px;
   }
 }
 

@@ -37,6 +37,9 @@ $ubold: 'Ubuntu-Bold'
 				width: auto
 				left: 15px
 				margin-left: 0
+			// &_sol
+			// 	&::before
+			// 		display: none
 		&__nav
 			display: none
 			&-link
@@ -123,6 +126,24 @@ $ubold: 'Ubuntu-Bold'
 		padding-bottom: 15px
 		iframe
 			height: 400px
+	.sidebar
+		padding: 0
+		text-align: center
+		width: 100%
+		max-width: 370px
+		z-index: 5
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
+		&__link
+			transition: unset
+			&::after
+				display: none
+		&.sticky
+			position: fixed
+			right: -3px
+			left: auto
+			top: 10px
+	.sol-acc__item-btn
+		font-size: 16px
 @media screen and (max-width: 768px)
 	
 	.section__ttl,
@@ -215,6 +236,20 @@ $ubold: 'Ubuntu-Bold'
 			margin-bottom: 15px
 	.clients .clients__item
 		margin-bottom: 15px
+	.sol-work__item
+		min-height: auto
+		padding-top: 25px
+		text-align: center
+		&-num
+			font-size: 40px
+			position: relative
+			left: 0
+			top: 0
+			span
+				&::after
+					display: none
+		p
+			margin-top: 10px
 @media screen and (max-width: 420px)
 	.header
 		&__nav
