@@ -100,13 +100,15 @@ $(function() {
       inputType =$("input[type=range]");
       owl.owlCarousel({
         // 'loop': true,
-        mouseDrag: false,
+        // mouseDrag: false,
         dots: false,
         startPosition: 5,
         center: true,
+        nav: true,
+        navText: ["<img src='img/prj-slider__arrow_prev.png'>", "<img src='img/prj-slider__arrow_next.png'>"],
         responsive: {
           0: {
-            items: 2,
+            items: 1,
             slideBy: 1,
            
           },
