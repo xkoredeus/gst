@@ -413,8 +413,8 @@ textarea:active {
 }
 
 .popup__container .fancybox-close-small {
-  top: 5px;
-  right: 5px;
+  top: 30px;
+  right: 30px;
   color: #151515;
 }
 
