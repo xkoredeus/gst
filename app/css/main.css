@@ -383,6 +383,30 @@ textarea:active {
   top: 2px;
 }
 
+.list_string {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list_string li {
+  padding-left: 25px;
+  position: relative;
+}
+
+.list_string li {
+  margin-bottom: 10px;
+}
+
+.list_string li::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: #fff;
+  left: 0;
+  top: 9px;
+}
+
 .popup__container {
   padding: 40px;
   background-color: transparent;
@@ -1321,7 +1345,9 @@ textarea:active {
   margin-bottom: 10px;
 }
 
-.sol-begin__item p {
+.sol-begin__item p,
+.sol-begin__item ul {
+  color: #fff;
   font-size: 16px;
   opacity: 0;
 }
@@ -1332,8 +1358,8 @@ textarea:active {
           transform: translateY(0);
 }
 
-.sol-begin__item:hover p {
-  color: #fff;
+.sol-begin__item:hover p,
+.sol-begin__item:hover ul {
   opacity: 1;
 }
 

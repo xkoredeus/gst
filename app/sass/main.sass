@@ -241,6 +241,22 @@ textarea:active
 				background: url('../img/icon__gal.png') no-repeat 50% 50% / contain
 				left: 0
 				top: 2px
+	&_string
+		list-style-type: none
+		padding-left: 0
+		li
+			padding-left: 25px
+			position: relative
+			&
+				margin-bottom: 10px
+			&::before
+				content: ''
+				position: absolute
+				width: 12px
+				height: 1px
+				background-color: #fff
+				left: 0
+				top: 9px
 .popup__container
 	padding: 40px
 	background-color: $tr
@@ -830,14 +846,17 @@ textarea:active
 				font-family: $ubold
 				font-size: 18px
 				margin-bottom: 10px
-			p
+			p,
+			ul
+				color: #fff
 				font-size: 16px
 				opacity: 0
 			&:hover
 				.sol-begin__item-in
+
 					transform: translateY(0)
-				p
-					color: #fff
+				p,
+				ul
 					opacity: 1
 				.sol-begin__item-ttl
 					color: #fff
