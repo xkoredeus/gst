@@ -176,9 +176,9 @@ $(function() {
       e.preventDefault();
       $(this).parent().toggleClass('hover').find('.header__nav-sub').slideToggle();
     });
-    $('.header__nav-sub-link-wrp').on('click', function(e) {
+    $('.header__nav-sub-link').on('click', function(e) {
       e.preventDefault();
-      $(this).toggleClass('hover-2').find('.header__nav-sub_2').slideToggle();
+      $(this).parent().toggleClass('hover-2').find('.header__nav-sub_2').slideToggle();
     });
   };
 	// tabs 
@@ -236,7 +236,16 @@ $(function() {
         $('.sidebar__link').slideToggle();
       };
       var id  = $(this).attr('href'),
-          top = $(id).offset().top;
+          top = $(id).offset().top - 170;
       $('body,html').animate({scrollTop: top}, 800);
   });
+  // //sticky header
+  // $(window).scroll(function() {
+  //   if ($(this).scrollTop() > 4){
+  //   $('.header').addClass("sticky");
+  //   }
+  //   else{
+  //   $('.header').removeClass("sticky");
+  //   }
+  // });
 });

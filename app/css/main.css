@@ -665,10 +665,15 @@ textarea:active {
 .header {
   font-size: 14px;
   background: url("../img/header__bg.jpg") no-repeat 50% 50%/cover;
+  position: relative;
+  padding-top: 46px;
 }
 
 .header__top {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 7;
+  top: 0;
 }
 
 .header__top::before {
@@ -995,7 +1000,7 @@ textarea:active {
   position: -webkit-sticky;
   position: sticky;
   left: 0;
-  top: 20px;
+  top: 60px;
 }
 
 .sidebar__ttl {

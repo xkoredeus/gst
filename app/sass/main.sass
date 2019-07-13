@@ -417,10 +417,14 @@ textarea:active
 .header
 	font-size: 14px
 	background: url('../img/header__bg.jpg') no-repeat 50% 50% / cover
-	// overflow: hidden
+	position: relative
+	padding-top: 46px
 	&__top
-		// padding: 15px 0
-		position: relative
+		position: fixed
+		width: 100%
+		z-index: 7
+		top: 0
+		// position: relative
 		&::before
 			content: ''
 			position: absolute
@@ -441,6 +445,8 @@ textarea:active
 			transform: translateY(2px)
 			margin-top: -12px
 			padding-top: 25px
+	&.sticky
+		// .header__top
 	&__tel
 		color: #fff
 		&:nth-child(1)
@@ -623,7 +629,7 @@ textarea:active
 	padding-bottom: 20px
 	position: sticky
 	left: 0
-	top: 20px
+	top: 60px
 	&__ttl
 		padding: 8px
 		font-family: $ubold
