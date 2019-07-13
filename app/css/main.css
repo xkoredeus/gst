@@ -2813,6 +2813,15 @@ main {
           transform: scale(0.9);
 }
 
+.contacts__map-img {
+  width: 100%;
+  max-width: 170px;
+  height: 190px;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .contacts-feed {
   overflow: hidden;
 }
