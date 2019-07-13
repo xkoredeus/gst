@@ -1010,7 +1010,7 @@ textarea:active {
   position: absolute;
   width: 10px;
   height: 10px;
-  left: 10px;
+  right: 10px;
   top: 50%;
   -webkit-transform: translate(0, -50%) rotate(90deg);
       -ms-transform: translate(0, -50%) rotate(90deg);
