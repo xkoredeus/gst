@@ -177,6 +177,9 @@
   .map .section__ttl {
     font-size: 20px !important;
   }
+  .about-part__ttl {
+    font-size: 20px;
+  }
   .header__nav-link {
     width: 100%;
     padding: 8px;

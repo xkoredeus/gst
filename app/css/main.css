@@ -1806,6 +1806,10 @@ main {
   position: relative;
 }
 
+.about-part__ttl {
+  font-size: 28px;
+}
+
 .about-part::before {
   content: '';
   position: absolute;
