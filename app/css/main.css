@@ -46,7 +46,6 @@ input:focus, input:active, .btn, .btn:after, select:focus, select:active {
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  cursor: pointer;
 }
 
 a {
@@ -166,6 +165,10 @@ textarea:active {
 
 .select__wrp select option {
   width: 100%;
+}
+
+.fancybox-container {
+  z-index: 8;
 }
 
 .tabs__list {
@@ -766,13 +769,21 @@ textarea:active {
   top: 25px;
   right: 23px;
   width: 32px;
-  height: 2px;
-  background-color: #FACC00;
+  height: 32px;
   opacity: 1;
   z-index: 2;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+.header__hamb span {
+  width: 100%;
+  display: block;
+  height: 2px;
+  background-color: #FACC00;
+  margin-top: -webkit-calc(50% - 1px);
+  margin-top: calc(50% - 1px);
 }
 
 .header__hamb::before, .header__hamb::after {
@@ -785,11 +796,11 @@ textarea:active {
 }
 
 .header__hamb::before {
-  top: -14px;
+  top: 0;
 }
 
 .header__hamb::after {
-  bottom: -14px;
+  bottom: 0;
 }
 
 .header__nav {

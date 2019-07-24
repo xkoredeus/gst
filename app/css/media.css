@@ -32,14 +32,16 @@
     display: none;
   }
   .header__nav-link {
-    width: 370px;
+    width: 100%;
+    max-width: 370px;
     margin-bottom: 15px;
   }
   .header__nav-link::after {
     display: none;
   }
   .header__nav-sub {
-    width: 370px;
+    width: 100%;
+    max-width: 370px;
     position: relative;
     top: -20px;
   }
