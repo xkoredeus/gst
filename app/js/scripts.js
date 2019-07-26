@@ -172,13 +172,13 @@ $(function() {
     });
   };
   if ( $(window).width() < 1199 ) {
-    $('.header__nav-link').on('click', function(e) {
+    $('.header__nav-link-wrp_sub .header__nav-link').on('click', function(e) {
       e.preventDefault();
       $(this).parent().toggleClass('hover').find('.header__nav-sub').slideToggle();
     });
-    $('.header__nav-sub-link').on('click', function(e) {
+    $('.header__nav-sub-link-btn').on('click', function(e) {
       e.preventDefault();
-      $(this).parent().toggleClass('hover-2').find('.header__nav-sub_2').slideToggle();
+      $(this).parents('.header__nav-sub-link-wrp').toggleClass('hover-2').find('.header__nav-sub_2').slideToggle();
     });
   };
 	// tabs 
